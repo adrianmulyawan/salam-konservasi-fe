@@ -1,0 +1,40 @@
+// ========================== Header ==========================
+// header image
+header {
+    padding: 186px 0 111px;
+    margin-top: -77px;
+    background-image: url('../images/header-web.png');
+    background-size: cover;
+
+    h1, p {
+        color: #fff;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    p {
+        font-family: 'Assistant', sans-serif;
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 24px;
+    }
+
+    .btn-get-started {
+        background-color: #FF9E53;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 50px;
+
+        &:hover {
+            background-color: #FFAA69;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}

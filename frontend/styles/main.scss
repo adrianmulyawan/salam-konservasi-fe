@@ -1,0 +1,12 @@
+body {
+    // background-color: #e4e6eb;
+    background-color: #fff;
+    font-family: 'Assistant', sans-serif;
+    color: #051334;
+    // font-family: 'Playfair Display', serif;
+}
+
+@import "pages/home";
+
+@import "components/navbar";
+@import "components/header";

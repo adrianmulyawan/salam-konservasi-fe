@@ -1,0 +1,45 @@
+// ========================== Navigasi ==========================
+// Logo Salam Konservasi
+.navbar-brand {   
+    img {
+        max-height: 50px;
+    }
+}
+
+// Menu Website
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            color: #051334;
+
+            // class nav-link active
+            &.active {
+                font-weight: bold;
+                color: #051334 !important;
+            }
+        }
+    }
+}
+
+// Button Masuk 
+button.btn-login {
+    background-color: #051334;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+
+    &:hover {
+        background-color: #1E3771;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+.btn-navbar-right {
+    margin-top: -14px !important;
+    margin-bottom: -14px !important;
+    margin-right: -14px !important;
+
+    height: 70px;
+    border-radius: 0;
+}

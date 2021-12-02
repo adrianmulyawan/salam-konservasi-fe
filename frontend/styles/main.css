@@ -1,0 +1,386 @@
+body {
+  background-color: #fff;
+  font-family: 'Assistant', sans-serif;
+  color: #051334;
+}
+
+.section-stats {
+  margin-top: -50px !important;
+}
+
+.section-stats .stats-detail {
+  padding-top: 15px;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+.section-stats h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.section-stats p {
+  font-size: 20px;
+  font-weight: 200px;
+}
+
+.section-conservation {
+  min-height: 540px;
+  background-color: #051334;
+  margin-top: -60px;
+  margin-bottom: -200px;
+}
+
+.section-conservation .section-conservation-heading {
+  margin-top: 155px;
+  color: white;
+}
+
+.section-conservation .section-conservation-heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.section-conservation .section-conservation-heading p {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.section-conservation-content .section-conservation-area .card-conservation {
+  min-height: 380px;
+  color: #fff;
+  padding: 18px;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.section-conservation-content .section-conservation-area .card-conservation .conservation-location {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+
+.section-conservation-content .section-conservation-area .card-conservation .conservation-name {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.section-conservation-content .section-conservation-area .card-conservation .conservation-button {
+  background-color: #FF9E53;
+  border-radius: 8px;
+}
+
+.section-conservation-content .section-conservation-area .card-conservation .conservation-button a {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.section-conservation-content .section-conservation-area .card-conservation .conservation-button:hover {
+  background-color: #FFAA69;
+  border-radius: 8px;
+}
+
+.section-conservation-content .section-conservation-area .all-conservation {
+  min-height: 380px;
+  color: #fff;
+  padding: 30px;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.section-conservation-content .section-conservation-area .all-conservation .conservation-all {
+  font-size: 23px;
+  font-weight: 600;
+  margin-top: 158px;
+}
+
+.section-conservation-content .section-conservation-area .all-conservation .conservation-all a {
+  color: white;
+}
+
+.section-events .section-events-heading {
+  margin-top: 100px;
+  color: #051334;
+}
+
+.section-events .section-events-heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.section-events .section-events-heading p {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 70px;
+}
+
+.section-events-content .section-conservation-events .card-events {
+  min-height: 380px;
+  color: #fff;
+  padding: 18px;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.section-events-content .section-conservation-events .card-events .events-name {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.section-events-content .section-conservation-events .card-events .events-location .events-date {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.section-events-content .section-conservation-events .card-events .events-button {
+  background-color: #FF9E53;
+  border-radius: 8px;
+}
+
+.section-events-content .section-conservation-events .card-events .events-button a.btn-events-details {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.section-events-content .section-conservation-events .card-events .events-button:hover {
+  background-color: #FFAA69;
+  border-radius: 8px;
+}
+
+.section-events-content .section-conservation-events .all-events {
+  min-height: 380px;
+  color: #fff;
+  padding: 30px;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.section-events-content .section-conservation-events .all-events .events-all {
+  font-size: 23px;
+  font-weight: 600;
+  margin-top: 158px;
+}
+
+.section-events-content .section-conservation-events .all-events .events-all a {
+  color: white;
+}
+
+.section-news .section-news-heading {
+  margin-top: 100px;
+  color: #051334;
+}
+
+.section-news .section-news-heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.section-news .section-news-heading p {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 70px;
+}
+
+.section-news-content .section-conservation-news .card-news {
+  min-height: 380px;
+  background-color: #041B50;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.section-news-content .section-conservation-news .card-news .card-body .news-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-news-content .section-conservation-news .card-news .card-body .news-name .news-link {
+  color: #fff;
+}
+
+.section-news-content .section-conservation-news .card-news .card-body .news-content {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.section-news-content .section-conservation-news .all-news {
+  min-height: 380px;
+  color: #fff;
+  padding: 30px;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.section-news-content .section-conservation-news .all-news .events-all {
+  font-size: 23px;
+  font-weight: 600;
+  margin-top: 158px;
+}
+
+.section-news-content .section-conservation-news .all-news .events-all a {
+  color: white;
+}
+
+.section-tutorial .section-tutorial-heading {
+  margin-top: 100px;
+  color: #051334;
+}
+
+.section-tutorial .section-tutorial-heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.section-tutorial .section-tutorial-heading p {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 70px;
+}
+
+.section-report .section-report-heading {
+  margin-top: 100px;
+  color: #051334;
+}
+
+.section-report .section-report-heading h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.section-report .section-report-heading p {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 70px;
+}
+
+.section-report-content .section-report-system .card-report {
+  padding: 30px;
+  border-radius: 20px solid #E3E3E3;
+}
+
+.section-report-content .section-report-system .card-report .report {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.section-report-content .section-report-system .card-report .btn-send-report {
+  background-color: #FF9E53;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-report-content .section-report-system .card-report .btn-send-report:hover {
+  background-color: #FFAA69;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-footer .logoFooter {
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.section-footer h5 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.section-footer a {
+  color: #051334;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.section-footer .socmed-icon {
+  max-width: 32px;
+  margin-right: 8px;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #051334;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #051334 !important;
+}
+
+button.btn-login {
+  background-color: #051334;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button.btn-login:hover {
+  background-color: #1E3771;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-navbar-right {
+  margin-top: -14px !important;
+  margin-bottom: -14px !important;
+  margin-right: -14px !important;
+  height: 70px;
+  border-radius: 0;
+}
+
+header {
+  padding: 186px 0 111px;
+  margin-top: -77px;
+  background-image: url("../images/header-web.png");
+  background-size: cover;
+}
+
+header h1, header p {
+  color: #fff;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+header p {
+  font-family: 'Assistant', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 24px;
+}
+
+header .btn-get-started {
+  background-color: #FF9E53;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+header .btn-get-started:hover {
+  background-color: #FFAA69;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=main.css.map */

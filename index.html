@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALAM Konservasi</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="frontend/styles/main.css">
+    <!-- data aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Header (Navbar dan Header) -->
+    <div class="header" data-aos="fade-down">
+        <!-- Navigasi -->
+        <div class="container">
+            <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+                <!-- Logo -->
+                <a href="#" class="navbar-brand">
+                    <img src="frontend/images/logo-salam-konservasi.png" alt="logo-salam-konservasi">
+                </a>
+
+                <!-- Humberger Button -->
+                <button class="navbar-toggler navbar-toggler-right"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu-menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mr-3">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Kawasan Konservasi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Acara</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">SOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Penggunaan Sistem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Unduh</a>
+                        </li>
+                    </ul>
+                    <!-- Mobil Button: Login -->
+                    <form action="" class="form-inline d-sm-block d-md-none">
+                        <button class="btn btn-login my-2 my-sm-0">
+                            MASUK
+                        </button>
+                    </form>
+                    <!-- Desktop Button: Login -->
+                    <form action="" class="form-inline my-2 my-lg-0 d-none d-md-block">
+                        <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
+                            MASUK
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Header Website -->
+        <header class="text-center">
+            <h1>
+                Selamat Datang Didalam <br>
+                Sistem Administrasi Layanan Masuk Kawasan Konservasi
+            </h1>
+
+            <p>
+                Layanan Satu pintu Permohonan Pengajuan Izin Masuk Kawasan Konservasi Perairan <br>
+                Daerah Kalimantan Barat
+            </p>
+
+            <a href="#" class="btn btn-get-started px-4 py-2">
+                Mulai Sekarang
+            </a>
+        </header>
+    </div>
+
+    <!-- Konten Utama -->
+    <main>
+        <!-- 1. Statistik Kawasan -->
+        <div class="container">
+            <section class="section-stats row justify-content-center" id="stats" data-aos="fade-up">
+                <div class="col-3 col-md-2 stats-detail">
+                    <h2>5</h2>
+                    <p>Kawasan</p>
+                </div>
+
+                <div class="col-3 col-md-2 stats-detail">
+                    <h2>300</h2>
+                    <p>Pariwisata</p>
+                </div>
+
+                <div class="col-3 col-md-2 stats-detail">
+                    <h2>50</h2>
+                    <p>Penelitian</p>
+                </div>
+
+                <div class="col-3 col-md-2 stats-detail">
+                    <h2>69</h2>
+                    <p>Pendidikan</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- 2. Kawasan Konservasi -->
+        <section class="section-conservation" id="conservation">
+            <!-- Text Kawasan Konservasi -->
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center section-conservation-heading" data-aos="fade-up">
+                        <h2>Daftar Kawasan Konservasi</h2>
+                        <p>Daftar Kawasan Konservasi Perairan Daerah <br>
+                        di Provinsi Kalimantan Barat
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Daftar Kawasan Konservasi -->
+        <section class="section-conservation-content" id="conservationContent">
+            <div class="container">
+                <div class="section-conservation-area row justify-content-center">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-conservation text-center d-flex flex-column" style="background-image: url('frontend/images/kawasan1.png');">
+                            <div class="conservation-location">Bengkayang</div>
+                            <div class="conservation-name">
+                                KKPD Randayan
+                            </div>
+                            <div class="conservation-button mt-auto">
+                                <a href="#" class="btn btn-conservation-details px-4">
+                                    Lihat Detail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-conservation text-center d-flex flex-column" style="background-image: url('frontend/images/kawasan2.png');">
+                            <div class="conservation-location">Sambas</div>
+                            <div class="conservation-name">
+                                KKPD Paloh
+                            </div>
+                            <div class="conservation-button mt-auto">
+                                <a href="#" class="btn btn-conservation-details px-4">
+                                    Lihat Detail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-conservation text-center d-flex flex-column" style="background-image: url('frontend/images/kawasan3.png');">
+                            <div class="conservation-location">Kayong Utara</div>
+                            <div class="conservation-name">
+                                KKPD Kayong Utara
+                            </div>
+                            <div class="conservation-button mt-auto">
+                                <a href="#" class="btn btn-conservation-details px-4">
+                                    Lihat Detail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="all-conservation text-center" style="background-image: url('frontend/images/kawasan4.png');">
+                            <div class="conservation-button mt-auto">
+                                <div class="conservation-all">
+                                    <a href="#">
+                                        Lihat Kawasan Lainnya
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Acara Kawasan -->
+        <section class="section-events" id="events">
+            <!-- Text Acara Kawasan -->
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center section-events-heading" data-aos="fade-up">
+                        <h2>Acara Terdekat</h2>
+                        <p>
+                            Event Terdekat di Kawsan Konservasi <br>
+                            Perairan Daerah Kalimantan Barat
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Daftar Acara Kawasan Konservasi -->
+        <section class="section-events-content" id="eventsContent">
+            <div class="container">
+                <div class="section-conservation-events row justify-content-center">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-events text-center d-flex flex-column" style="background-image: url('frontend/images/event1.png');">
+                            <div class="events-name">Menanam Mangrove</div>
+                            <div class="events-location">
+                                KKPD Kubu Raya
+                            </div>
+                            <div class="events-date">
+                                12 Januari 2021
+                            </div>
+                            <div class="events-button mt-auto">
+                                <a href="#" class="btn btn-events-details px-4 text-center">
+                                    Lihat Detail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-events text-center d-flex flex-column" style="background-image: url('frontend/images/event2.png');">
+                            <div class="events-name">Menyelam Bersama</div>
+                            <div class="events-location">
+                                KKPD Randayan
+                            </div>
+                            <div class="events-date">
+                                12 Januari 2021
+                            </div>
+                            <div class="events-button mt-auto">
+                                <a href="#" class="btn btn-events-details px-4 text-center">
+                                    Lihat Detail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-events text-center d-flex flex-column" style="background-image: url('frontend/images/event3.png');">
+                            <div class="events-name">Pesta Laut</div>
+                            <div class="events-location">
+                                KKPD Randayan
+                            </div>
+                            <div class="events-date">
+                                12 Januari 2021
+                            </div>
+                            <div class="events-button mt-auto">
+                                <a href="#" class="btn btn-events-details px-4 text-center">
+                                    Lihat Detail
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="all-events text-center" style="background-image: url('frontend/images/event4.png');">
+                            <div class="events-button mt-auto">
+                                <div class="events-all">
+                                    <a href="#">
+                                        Lihat Acara Lainnya
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Berita Kawasan -->
+        <section class="section-news" id="news">
+            <!-- Text Berita Kawasan -->
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center section-news-heading" data-aos="fade-up">
+                        <h2>Berita Kawasan</h2>
+                        <p>
+                            Update Berita di Kawsan Konservasi <br>
+                            Perairan Daerah Kalimantan Barat
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Daftar Berita Kawasan -->
+        <section class="section-news-content" id="newsContent">
+            <div class="container">
+                <div class="section-conservation-news row justify-content-center">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card card-news text-left d-flex flex-column">
+                            <img class="news-background" src="frontend/images/berita1.png" alt="">
+                            <div class="card-body">
+                                <div class="news-name card-title">
+                                    <a href="#" class="news-link">
+                                        Bantuan Alat Selam
+                                    </a>
+                                </div>
+                                <div class="news-content card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sit amet venenatis urna cursus eget 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card card-news text-left d-flex flex-column">
+                            <img class="news-background" src="frontend/images/berita2.png" alt="">
+                            <div class="card-body">
+                                <div class="news-name card-title">
+                                    <a href="#" class="news-link">
+                                        Bantuan Alat Selam
+                                    </a>
+                                </div>
+                                <div class="news-content card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sit amet venenatis urna cursus eget 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card card-news text-left d-flex flex-column">
+                            <img class="news-background" src="frontend/images/berita3.png" alt="">
+                            <div class="card-body">
+                                <div class="news-name card-title">
+                                    <a href="#" class="news-link">
+                                        Bantuan Alat Selam
+                                    </a>
+                                </div>
+                                <div class="news-content card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sit amet venenatis urna cursus eget 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="all-news text-center" style="background-image: url('frontend/images/berita4.png');">
+                            <div class="events-button mt-auto">
+                                <div class="events-all">
+                                    <a href="#">
+                                        Lihat Berita Lainnya
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Tutorial Penggunaan Sistem -->
+        <section class="section-tutorial" id="tutorial">
+            <!-- Text Berita Kawasan -->
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center section-tutorial-heading" data-aos="fade-up">
+                        <h2>Tutorial Penggunaan Sistem</h2>
+                        <p>
+                            Tutorial Penggunaan Sistem Informasi <br>
+                            Pengajuan Izin Masuk Kawasan Konservasi
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Video -->
+        <div class="section-tutorial-content" id="tutorialContent">
+            <div class="container">
+                <div class="section-conservation-tutorial row justify-content-center">
+                    <div class="col-sm-12 col-md-12 col-lg-12" data-aos="fade-up" data-aos-delay="100">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=JhpjKpDUbAY" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Pesan, Saran dan Pengaduan -->
+        <section class="section-report" id="report">
+            <!-- Text Berita Kawasan -->
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center section-report-heading" data-aos="fade-up">
+                        <h2>Pesan, Saran, dan Pengaduan</h2>
+                        <p>
+                            Pesan, Saran, dan Masukan Dari Anda <br>
+                            Untuk Pelayanan Yang Lebih Baik Lagi
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Field Pesan, Saran, dan Pengaduan -->
+        <div class="section-report-content" id="reportContent">
+            <div class="container">
+                <div class="section-report-system row justify-content-center">
+                    <div class="col-sm-12 col-md-12 col-lg-12" data-aos="fade-up">
+                        <form action="#">
+                            <div class="card-report border border rounded">
+                                <div class="form-group">
+                                    <label for="name" class="report">Nama</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Masukan Nama Anda">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="report">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Masukan Email Anda">
+                                </div>
+                                <div class="form-group">
+                                    <label for="noTelepon" class="report">No Telepon</label>
+                                    <input type="text" class="form-control" id="noTelpon" placeholder="Masukan Nomor Telepon/Handhphone Anda">
+                                </div>
+                                <div class="form-group">
+                                    <label for="judulPesan" class="report">Judul Pesan</label>
+                                    <input type="text" class="form-control" id="judulPesan" placeholder="Tambahkan Judul Pesan">
+                                </div>
+                                <div class="form-group">
+                                    <label for="isiPesan" class="report">Isi Pesan</label>
+                                    <textarea class="form-control" id="isiPesan" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-send-report px-4 py-2">
+                                        Kirim Pesan
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="section-footer mt-5 mb-4 border-top" data-aos="fade-up">
+        <div class="container pt-5 pb-5">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <img src="frontend/images/logo-footer.png" alt="logo-footer" class="logoFooter">
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <h5>Jelajahi</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Peta Kawasan</a></li>
+                                <li><a href="#">Form Pendidikan</a></li>
+                                <li><a href="#">Form Penelitian</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <h5>Bantuan</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Daftar Akun</a></li>
+                                <li><a href="#">Lupa Password</a></li>
+                                <li><a href="#">Penggunaan Sistem</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <h5>Sosial Media</h5>
+                            <ul class="list-unstyled">
+                                <div class="d-flex justify-content-start">
+                                    <li><a href="https://instagram.com/adrianmulyawan" target="_blank">
+                                        <img src="frontend/images/logo-fb.png" class="socmed-icon">
+                                    </a></li>
+                                    <li><a href="#">
+                                        <img src="frontend/images/logo-ig.png" class="socmed-icon">
+                                    </a></li>
+                                    <li><a href="#">
+                                        <img src="frontend/images/logo-twitter.png" class="socmed-icon">
+                                    </a></li>
+                                    <li><a href="#">
+                                        <img src="frontend/images/logo-whatsapp.png" class="socmed-icon">
+                                    </a></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row border-top justify-content-center align-items-center pt-4">
+                <div class="col-auto text-gray-500 font-weight-light">
+                    Copyright 2021 © Dinas Kelautan dan Perikanan Kalimantan Barat
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="frontend/libraries/jquery/jquery-3.6.0.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
+    <script src="frontend/libraries/retina/retina.min.js"></script>
+</body>
+</html>

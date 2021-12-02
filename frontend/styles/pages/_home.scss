@@ -1,0 +1,348 @@
+// ========================== Statistik ==========================
+.section-stats {
+    margin-top: -50px !important;
+
+    .stats-detail {
+        padding-top: 15px;
+        text-align: center;
+        background-color: #FFFFFF;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 200px;
+    }
+}
+
+// ========================== Kawasan Konservasi ==========================
+// Text Kawasan Konservasi
+.section-conservation {
+    min-height: 540px;
+    background-color: #051334;
+    margin-top: -60px;
+    margin-bottom: -200px;
+
+    .section-conservation-heading {
+        margin-top: 155px;
+        color: white;
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 8px
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: normal;
+        }
+    }
+}
+// daftar kawasan
+.section-conservation-content {
+    .section-conservation-area {
+        .card-conservation {
+            min-height: 380px;
+            color: #fff;
+            padding: 18px;
+            background-size: cover;
+            margin-bottom: 30px;
+
+            .conservation-location {
+                font-size: 20px;
+                font-weight: normal;
+                margin-bottom: 4px;
+            }
+
+            .conservation-name {
+                font-size: 23px;
+                font-weight: 600;
+            }
+
+            .conservation-button {
+                background-color: #FF9E53;
+                border-radius: 8px;
+
+                a {
+                    font-weight: bold;
+                    font-size: 20px;
+                    color: white;
+                }
+
+                &:hover {
+                    background-color: #FFAA69;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        .all-conservation {
+            min-height: 380px;
+            color: #fff;
+            padding: 30px;
+            background-size: cover;
+            margin-bottom: 30px;
+
+            .conservation-all {
+                font-size: 23px;
+                font-weight: 600;
+                margin-top: 158px;
+                
+                a {
+                    
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+// ========================== Acara Kawasan Konservasi ==========================
+// Text Acara Kawasan 
+.section-events {
+    .section-events-heading {
+        margin-top: 100px;
+        color: #051334;
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 70px;
+        }
+    }
+}
+// Konten Acara Kawasan Konservasi
+.section-events-content {
+    .section-conservation-events {
+        .card-events {
+            min-height: 380px;
+            color: #fff;
+            padding: 18px;
+            background-size: cover;
+            margin-bottom: 30px;
+
+            .events-name {
+                font-size: 23px;
+                font-weight: 600;
+            }
+
+            .events-location .events-date {
+                font-size: 20px;
+                font-weight: normal;
+            }
+
+            .events-button {
+                background-color: #FF9E53;
+                border-radius: 8px;
+                // margin-bottom: 28px;
+                // margin-left: 48px;
+                // margin-right: 48px;
+
+                a.btn-events-details {
+                    font-weight: 600;
+                    font-size: 20px;
+                    text-align: center;
+                    color: #fff;
+                }
+
+                &:hover {
+                    background-color: #FFAA69;
+                    border-radius: 8px;
+                }
+            }
+        }
+        .all-events {
+            min-height: 380px;
+            color: #fff;
+            padding: 30px;
+            background-size: cover;
+            margin-bottom: 30px;
+
+            .events-all {
+                font-size: 23px;
+                font-weight: 600;
+                margin-top: 158px;
+                
+                a {
+                    
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+// ========================== Berita Kawasan Konservasi ==========================
+// Text Berita Kawasan 
+.section-news {
+    .section-news-heading {
+        margin-top: 100px;
+        color: #051334;
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 70px;
+        }
+    }
+}
+// Konten Berita Kawasan
+.section-news-content {
+    .section-conservation-news {
+        .card-news {
+            min-height: 380px;
+            background-color: #041B50;
+            color: #fff;
+            // padding: 18px;
+            // background-size: cover;
+            margin-bottom: 30px;
+
+            .card-body {
+                .news-name {
+                    font-size: 20px;
+                    font-weight: bold;
+
+                    .news-link {
+                        color: #fff;
+                    }
+                }
+
+                .news-content {
+                    font-size: 12px;
+                    font-weight: normal;
+                }
+            }
+        }
+        .all-news {
+            min-height: 380px;
+            color: #fff;
+            padding: 30px;
+            background-size: cover;
+            margin-bottom: 30px;
+
+            .events-all {
+                font-size: 23px;
+                font-weight: 600;
+                margin-top: 158px;
+                
+                a {
+                    
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+// ========================== Penggunaan Sistem ==========================
+.section-tutorial {
+    .section-tutorial-heading {
+        margin-top: 100px;
+        color: #051334;
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 70px;
+        }
+    }
+}
+
+// ========================== Saran Terhadap Sistem ==========================
+.section-report {
+    .section-report-heading {
+        margin-top: 100px;
+        color: #051334;
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 70px;
+        }
+    }
+}
+.section-report-content {
+    .section-report-system {
+        .card-report {
+            padding: 30px;
+            border-radius: 20px solid #E3E3E3;
+
+            .report {
+                font-size: 20px;
+                font-weight: 400;
+            }
+
+            .btn-send-report {
+                background-color: #FF9E53;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+
+                &:hover {
+                    background-color: #FFAA69;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+// ========================== Footer ==========================
+.section-footer {
+    .logoFooter {
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+
+    h5 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    a {
+        color: #051334;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .socmed-icon {
+        max-width: 32px;
+        margin-right: 8px;
+    }
+}
