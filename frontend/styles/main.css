@@ -310,6 +310,280 @@ body {
   margin-right: 8px;
 }
 
+.section-details-header {
+  min-height: 310px;
+  background-color: #041B50;
+  margin-top: -76px;
+}
+
+.section-details-content {
+  margin-top: -180px;
+  min-height: 100vh;
+}
+
+.section-details-content .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.section-details-content .breadcrumb-item.active {
+  font-weight: bold;
+  color: white;
+}
+
+.section-details-content .card-details {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.section-details-content .card-details h1.conservation-name {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.section-details-content .card-details p.conservation-location {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.section-details-content .card-details h2.about-conservation-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-details-content .card-details p.about-conservation {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.section-details-content .card-details .features {
+  margin-top: 30px;
+}
+
+.section-details-content .card-details .features h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.section-details-content .card-details .features p {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.section-details-content .card-details .features .maps {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.section-details-content .card-details .features .description {
+  margin-left: 10px;
+  overflow: hidden;
+  float: left;
+}
+
+.section-details-content .card-details .features .features-image {
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.section-details-content .gallery .xzoom-container {
+  display: block;
+}
+
+.section-details-content .gallery .xzoom-container .xzoom {
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 10px;
+}
+
+.section-details-content .gallery .xzoom-container .xactive {
+  border: 4px solid #FF9E53;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.section-details-content .card-right h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-details-content .card-right .conservation-information th {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-details-content .card-right .conservation-information td {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.section-details-content .card-right .purposes {
+  margin-top: 20px;
+}
+
+.section-details-content .card-right .purposes h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-details-content .card-right .entrance-fee h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-details-content .card-right .entrance-fee .tourism h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.section-details-content .card-right .entrance-fee .tourism .tourism-price th {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-details-content .card-right .entrance-fee .tourism .tourism-price td {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.section-details-content .card-right .entrance-fee .research {
+  margin-top: 10px;
+}
+
+.section-details-content .card-right .entrance-fee .research h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.section-details-content .card-right .entrance-fee .research .research-price th {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-details-content .card-right .entrance-fee .research .research-price td {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.section-details-content .card-right .entrance-fee .education {
+  margin-top: 10px;
+}
+
+.section-details-content .card-right .entrance-fee .education h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.section-details-content .card-right .entrance-fee .education .education-price th {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-details-content .card-right .entrance-fee .education .education-price td {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.section-details-content .card-right .tools {
+  margin-top: 20px;
+}
+
+.section-details-content .card-right .tools h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-details-content .card-right .tools .tools-list .tools-price th {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-details-content .card-right .tools .tools-list .tools-price td {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.section-details-content .card-right .join-container {
+  margin-top: 30px;
+}
+
+.section-details-content .card-right .btn-join-now {
+  background-color: #FF9E53;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.section-details-content .card-right .btn-join-now:hover {
+  background-color: #FFAA69;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-events {
+  margin-top: 30px;
+}
+
+.section-events .card-events {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.section-events .card-events h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section-events .section-event-conservation .card-conservation-event {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.section-events .section-event-conservation .card-conservation-event .conservation-event-title h5 {
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.section-events .section-event-conservation .card-conservation-event .conservation-event-date {
+  font-size: 12px;
+  font-weight: normal;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.section-events .section-event-conservation .card-conservation-event .conservation-event-location {
+  font-size: 12px;
+  font-weight: normal;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.section-events .section-event-conservation .card-conservation-event .conservation-event-detail .btn-event-detail {
+  background-color: #FF9E53;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.section-events .section-event-conservation .card-conservation-event .conservation-event-detail .btn-event-detail:hover {
+  background-color: #FFAA69;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .navbar-brand img {
   max-height: 50px;
 }
