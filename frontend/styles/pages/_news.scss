@@ -1,0 +1,76 @@
+.section-conservation-news {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    p {
+        font-size: 16px;
+        color: #051334;
+        font-weight: 300;
+    }
+}
+
+.section-conservation-news-list {
+    .section-conservation-area-news-new {
+        .card {
+            padding: 0px;
+            border-radius: 10px;
+
+            .header-image {
+                max-width: 508px;
+                border-radius: 10px;
+            }
+
+            .card-body {
+                h5.card-title {
+                    font-size: 28px;
+                    font-weight: 700;
+                    a {
+                        color: #041B50;
+                    }
+                }
+                .card-date {
+                    font-size: 18px;
+                    color: #B1B1B1;
+                }
+                .card-text-news {
+                    font-size: 16px;
+                    color: #B1B1B1;
+                }
+            }
+        }
+    }
+
+    .section-conservation-area-news {
+        .card {
+            border-radius: 10px;
+
+            .card-img-top {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .card-title {
+                font-size: 20px;
+                font-weight: 600;
+                a {
+                    color: #051334;
+                }
+            }
+            .card-post {
+                margin-top: 6px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                color: #B1B1B1;
+                font-weight: normal;
+            }
+            .card-text {
+                font-size: 14px;
+                color: #B1B1B1;
+                font-weight: normal;
+            }
+        }
+    }
+}

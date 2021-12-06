@@ -825,13 +825,13 @@ div.section-success .btn-dashboard {
 .section-conservation-area-list .section-conservation-area .card .card-location {
   margin-top: 6px;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 18px;
   color: #B1B1B1;
   font-weight: normal;
 }
 
 .section-conservation-area-list .section-conservation-area .card .card-text {
-  font-size: 14px;
+  font-size: 18px;
   color: #B1B1B1;
   font-weight: normal;
 }
@@ -840,6 +840,225 @@ div.section-success .btn-dashboard {
   float: right;
   background-color: #FF9E53;
   color: #fff;
+  font-weight: 600;
+}
+
+.section-conservation-news {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.section-conservation-news h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.section-conservation-news p {
+  font-size: 16px;
+  color: #051334;
+  font-weight: 300;
+}
+
+.section-conservation-news-list .section-conservation-area-news-new .card {
+  padding: 0px;
+  border-radius: 10px;
+}
+
+.section-conservation-news-list .section-conservation-area-news-new .card .header-image {
+  max-width: 508px;
+  border-radius: 10px;
+}
+
+.section-conservation-news-list .section-conservation-area-news-new .card .card-body h5.card-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.section-conservation-news-list .section-conservation-area-news-new .card .card-body h5.card-title a {
+  color: #041B50;
+}
+
+.section-conservation-news-list .section-conservation-area-news-new .card .card-body .card-date {
+  font-size: 18px;
+  color: #B1B1B1;
+}
+
+.section-conservation-news-list .section-conservation-area-news-new .card .card-body .card-text-news {
+  font-size: 16px;
+  color: #B1B1B1;
+}
+
+.section-conservation-news-list .section-conservation-area-news .card {
+  border-radius: 10px;
+}
+
+.section-conservation-news-list .section-conservation-area-news .card .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.section-conservation-news-list .section-conservation-area-news .card .card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-conservation-news-list .section-conservation-area-news .card .card-title a {
+  color: #051334;
+}
+
+.section-conservation-news-list .section-conservation-area-news .card .card-post {
+  margin-top: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #B1B1B1;
+  font-weight: normal;
+}
+
+.section-conservation-news-list .section-conservation-area-news .card .card-text {
+  font-size: 14px;
+  color: #B1B1B1;
+  font-weight: normal;
+}
+
+.section-details-news-header {
+  min-height: 310px;
+  background-color: #041B50;
+  margin-top: -76px;
+}
+
+.section-details-news-content {
+  margin-top: -180px;
+  min-height: 100vh;
+}
+
+.section-details-news-content .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.section-details-news-content .breadcrumb-item.active {
+  font-weight: bold;
+  color: white;
+}
+
+.section-details-news-content .card.card-details {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.section-details-news-content .card.card-details .img-detail-header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.section-details-news-content .card.card-details h1.conservation-news-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: px;
+}
+
+.section-details-news-content .card.card-details p.conservation-news-date {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.section-details-news-content .card.card-details p.conservation-news-author {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.section-details-news-content .card.card-details p.about-news {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.section-details-news-content .card-more-news h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.section-details-news-content .card-more-news .card.card-news {
+  border-radius: 10px;
+}
+
+.section-details-news-content .card-more-news .card.card-news .img-header {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.section-details-news-content .card-more-news .card.card-news .card-body h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-details-news-content .card-more-news .card.card-news .card-body h5 a {
+  color: #041B50;
+}
+
+.section-details-news-content .card-more-news .card.card-news .card-body p {
+  font-size: 16px;
+}
+
+.section-events {
+  margin-top: 30px;
+}
+
+.section-events .card-events {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.section-events .card-events h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section-events .section-event-conservation .card-conservation-event {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.section-events .section-event-conservation .card-conservation-event .conservation-event-title h5 {
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.section-events .section-event-conservation .card-conservation-event .conservation-event-date {
+  font-size: 12px;
+  font-weight: normal;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.section-events .section-event-conservation .card-conservation-event .conservation-event-location {
+  font-size: 12px;
+  font-weight: normal;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.section-events .section-event-conservation .card-conservation-event .conservation-event-detail .btn-event-detail {
+  background-color: #FF9E53;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.section-events .section-event-conservation .card-conservation-event .conservation-event-detail .btn-event-detail:hover {
+  background-color: #FFAA69;
+  color: white;
+  font-size: 20px;
   font-weight: 600;
 }
 

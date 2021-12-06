@@ -1,0 +1,139 @@
+.section-details-news-header {
+    min-height: 310px;
+    background-color: #041B50;
+    margin-top: -76px;
+}
+
+.section-details-news-content {
+    margin-top: -180px;
+    min-height: 100vh;
+
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    
+    .breadcrumb-item {
+        &.active {
+            font-weight: bold;
+            color: white;
+        }
+    }
+
+    .card.card-details {
+        padding: 10px;
+        border-radius: 10px;
+
+        .img-detail-header {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-bottom: 16px;
+        }
+
+        h1.conservation-news-name {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: px;
+        }
+        p.conservation-news-date {
+            font-size: 16px;
+            font-weight: normal;
+        }
+        p.conservation-news-author {
+            font-size: 16px;
+            font-weight: normal;
+        }
+        p.about-news {
+            font-size: 20px;
+            font-weight: lighter;
+        }
+    }
+
+    .card-more-news {
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .card.card-news {
+            border-radius: 10px;
+
+            .img-header {
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+            .card-body {
+                h5 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    a {
+                        color: #041B50;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.section-events {
+    margin-top: 30px;
+    .card-events {
+        h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .section-event-conservation {
+        .card-conservation-event {
+            border-radius: 10px;
+            margin-bottom: 10px;
+            .conservation-event-title {
+                h5 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    padding-left: 10px;
+                    padding-top: 10px;
+                    padding-bottom: 5px;
+                }
+            }
+            .conservation-event-date {
+                font-size: 12px;
+                font-weight: normal;
+                padding-left: 10px;
+                padding-bottom: 5px;
+            }
+            .conservation-event-location {
+                font-size: 12px;
+                font-weight: normal;
+                padding-left: 10px;
+                padding-bottom: 5px;
+            }
+            .conservation-event-detail {
+                .btn-event-detail {
+                    background-color: #FF9E53;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 600;
+                    border-radius: 10px;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+
+                    &:hover {
+                        background-color: #FFAA69;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
