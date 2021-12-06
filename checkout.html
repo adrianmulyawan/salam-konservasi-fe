@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALAM Konservasi</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="frontend/libraries/bootstrap/css/bootstrap.css">
+    <!-- xzoom -->
+    <link rel="stylesheet" href="frontend/libraries/xzoom/xzoom.css">
+    <!-- gijgo -->
+    <link rel="stylesheet" href="frontend/libraries/gijgo/css/gijgo.css">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="frontend/styles/main.css">
+    <!-- data aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Header (Navbar dan Header) -->
+    <div class="header" data-aos="fade-down">
+        <!-- Navigasi -->
+        <div class="container">
+            <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="frontend/images/logo-salam-konservasi.png" alt="logo-salam-konservasi">
+                </a>
+
+                <!-- Humberger Button -->
+                <button class="navbar-toggler navbar-toggler-right"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu-menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mr-3">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="conservationArea.html" class="nav-link">Kawasan Konservasi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="events.html" class="nav-link">Acara</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">SOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Penggunaan Sistem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Unduh</a>
+                        </li>
+                    </ul>
+                    <!-- Mobil Button: Login -->
+                    <form action="" class="form-inline d-sm-block d-md-none">
+                        <button class="btn btn-login my-2 my-sm-0">
+                            MASUK
+                        </button>
+                    </form>
+                    <!-- Desktop Button: Login -->
+                    <form action="" class="form-inline my-2 my-lg-0 d-none d-md-block">
+                        <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
+                            MASUK
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Konten Utama -->
+    <main> 
+        <!-- 1. Header -->
+        <section class="section-details-header"></section>
+
+        <!-- 2. Konten -->
+        <section class="section-details-content">
+            <div class="container">
+                <!-- Bread Crumb -->
+                <div class="row" data-aos="fade-up">
+                    <div class="col p-0">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="#">Kawasan Konservasi</a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    Details 
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    Pengajuan Surat Izin Masuk KKPD
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    KKPD Pulau Randayan
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Tambah Data dan Cek Data -->
+                <div class="row">
+                    <!-- Tambah Data -->
+                    <div class="col-lg-8 pl-lg-0" data-aos="fade-up">
+                        <div class="card card-details">
+                            <h1>Pengajuan Surat Izin Masuk Kawasan Konservasi</h1>
+                            <p>KKPD Pulau Randayan</p>
+                            <div class="date">
+                                <form action="#" method="post">
+                                    <h2 class="inputDate">Tambahkan Tanggal Masuk dan Keluar Kawasan</h2>
+                                    <div class="form-inline">
+                                        <label for="tanggal_masuk" class="sr-only">
+                                            Tanggal Masuk
+                                        </label>
+                                        <div class="input-group mb-2 mr-sm-2">
+                                            <input type="text" class="form-control datepicker" id="tanggal_masuk" name="tangga_masuk" required placeholder="Tanggal Masuk Kawasan">
+                                        </div>
+
+                                        <label for="tanggal_keluar" class="sr-only">
+                                            Tanggal Keluar
+                                        </label>
+                                        <div class="input-group mb-2 mr-sm-2">
+                                            <input type="text" class="form-control datepicker1" id="tanggal_keluar" name="tangga_keluar" required placeholder="Tanggal Keluar Kawasan">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary btn-submits mt-0 py-2 mb-2">Tambah</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <hr>
+                            <div class="attendee">
+                                <h2>Data Pengunjung</h2>
+                                <table class="table table-responsive-sm text-center">
+                                    <thead>
+                                        <tr>
+                                            <td>Nama</td>
+                                            <td>Kenegaraan</td>
+                                            <td>No Telp</td>
+                                            <td>Alamat</td>
+                                            <td>Foto Identitas</td>
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-middle">Anastasya Kosasih</td>
+                                            <td class="align-middle">WNI</td>
+                                            <td class="align-middle">
+                                                082154590559
+                                            </td>
+                                            <td class="align-middle">Jl Sawo no 69</td>
+                                            <td>
+                                                <img src="frontend/images/KTP.png" height="70">
+                                            </td>
+                                            <td class="align-middle">
+                                                <a href="#">
+                                                    <img src="frontend/images/cancel_icon.png" width="10">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-middle">Adrian Mulyawan</td>
+                                            <td class="align-middle">WNI</td>
+                                            <td class="align-middle">
+                                                089640001855
+                                            </td>
+                                            <td class="align-middle">Jl Sawo no 69</td>
+                                            <td>
+                                                <img src="frontend/images/KTP.png" height="70">
+                                            </td>
+                                            <td class="align-middle">
+                                                <a href="#">
+                                                    <img src="frontend/images/cancel_icon.png" width="10">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="member mt-3">
+                                <h2>Tambah Data Anggota Pengunjung</h2>
+                                <form action="" class="form-inline">
+                                    <label for="inputName" class="sr-only">Name</label>
+                                    <input type="text" class="form-control mb-2 mr-sm-2 input-name" id="inputName" name="inputName" required placeholder="Nama">
+
+                                    <label for="inputNationality" class="sr-only">Nationality</label>
+                                    <select class="custom-select mb-2 mr-sm-2 input-nationality" id="inputNationality" name="inputNationality" required>
+                                        <option selected disabled>Kebangsaan</option>
+                                        <option value="wni">WNI</option>
+                                        <option value="wna">WNA</option>
+                                    </select>
+
+                                    <label for="inputAddress" class="sr-only">Alamat</label>
+                                    <input type="text" class="form-control mb-2 mr-sm-2 input-alamat" id="inputAddress" required placeholder="Alamat">
+
+                                    <label for="inputTelpon" class="sr-only">Alamat</label>
+                                    <input type="text" class="form-control mb-2 mr-sm-2 input-telpon" id="inputTelpon" required placeholder="No Telpon">
+
+                                    <div class="custom-file mb-2">
+                                        <label class="custom-file-label" for="inputIdentity">KTP/KK/Passport</label>
+                                        <input type="file" class="custom-file-input mb-2 mr-sm-2 input-identity" id="inputIdentity" required>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-add-member mb-2 px-4">
+                                        Tambah
+                                    </button>
+                                </form>
+                            </div>
+                            <hr>
+                            <div class="tools">
+                                <h2>Peralatan Pendukung Bawaan Pengunjung (Perbuah)</h2>
+                                <table class="table table-responsive-sm text-center">
+                                    <thead>
+                                        <tr>
+                                            <td>Alat Selam</td>
+                                            <td>Alat Seluncur</td>
+                                            <td>Kamera (Kamera Bawah Air / Kamera)</td>
+                                            <td>Jetski</td>
+                                            <td>Kapal</td>
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="align-middle">0</td>
+                                            <td class="align-middle">0</td>
+                                            <td class="align-middle">0</td>
+                                            <td class="align-middle">0</td>
+                                            <td class="align-middle">0</td>
+                                            <td class="align-middle">
+                                                <a href="#">
+                                                    <img src="frontend/images/cancel_icon.png" width="10">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="add-tools">
+                                <h2>Tambah Data Peralatan Pendukung Bawaan Pengunjung</h2>
+                                <form action="" class="form-inline">
+                                    <label for="alatSelam" class="sr-only">Alat Selam</label>
+                                    <input type="text" class="form-control mb-2 mr-sm-2 input-alat-selam" id="alatSelam" name="alatSelam" required placeholder="Alat Selam (Buah)">
+
+                                    <label for="alatSeluncur" class="sr-only">Alat Selam</label>
+                                    <input type="text" class="form-control mb-2 mr-sm-2 input-alat-seluncur" id="alatSeluncur" name="alatSeluncur" required placeholder="Alat Seluncur (Buah)">
+
+                                    <label for="kamera" class="sr-only">Alat Selam</label>
+                                    <input type="text" class="form-control mb-2 mr-sm-2 input-kamera" id="kamera" name="kamera" required placeholder="Kamera (Buah)">
+
+                                    <label for="jetski" class="sr-only">Alat Selam</label>
+                                    <input type="text" class="form-control mb-2 mr-sm-2 input-jetski" id="jetski" name="jetski" required placeholder="Jetski (Buah)">
+
+                                    <label for="kapal" class="sr-only">Alat Selam</label>
+                                    <input type="text" class="form-control mb-2 mr-sm-2 input-kapal" id="kapal" name="kapal" required placeholder="Kapal (Buah)">
+
+                                    <button type="submit" class="btn btn-add-tools mb-2 px-4">
+                                        Tambah
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="note-tools mt-2 mb-0">
+                                <h3>Catatan</h3>
+                                <p>
+                                    Jika Tidak Membawa Peralatan Cukup Kosongkan Saja
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="upload-research-education">
+                                <h2>Upload Form Pengajuan Untuk Penelitian dan Pendidikan</h2>
+                                <div class="custom-file mb-2">
+                                    <label class="custom-file-label" for="inputFormulir">Upload Formulir Kegiatan Penelitian / Pendidikan</label>
+                                    <input type="file" class="custom-file-input mb-2 mr-sm-2 input-formulir" id="inputFormulir" required>
+                                </div>
+                            </div>
+                            <div class="note-research mt-2 mb-0">
+                                <h3>Catatan</h3>
+                                <p>
+                                    Upload Form Hanya Untuk Pengaju yang Melakukan Kunjungan Penelitian / Pendidikan
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detail Tentang Kawasan -->
+                    <div class="col-lg-4">
+                        <div class="card card-details card-right" data-aos="fade-up">
+                            <h2>Konfirmasi Data Pengajuan Masuk Kawasan</h2>
+
+                            <hr>
+
+                            <table class="conservation-checkout">
+                                <tr>
+                                    <th width="50%">Tujuan Pengajuan</th>
+                                    <td width="50%" class="text-right">
+                                        Pariwista
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="50%">Jumlah Hari</th>
+                                    <td width="50%" class="text-right">
+                                        2 Hari
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="50%">Biaya Pengajuan Izin</th>
+                                    <td width="50%" class="text-right">
+                                        Rp 60.000,00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="50%">Biaya Peralatan Bawaan Pengunjung</th>
+                                    <td width="50%" class="text-right">
+                                        Rp 120.000,00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="50%">Total Biaya Pengajuan</th>
+                                    <td width="50%" class="text-right total-price">
+                                        Rp 180.000,00
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- Button Daftar -->
+                        <div class="join-container" data-aos="fade-up">
+                            <!-- <a class="btn btn-block btn-join-now mt-3 py-2" data-toggle="modal" data-target="#staticBackdrop">
+                                Daftar Pengajuan Izin Masuk Kawasan
+                            </a> -->
+                            <button type="button" class="btn btn-block btn-join-now mt-3 py-2" data-toggle="modal" data-target="#staticBackdrop">
+                                Daftar Pengajuan Izin Masuk Kawasan
+                            </button>
+                            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">
+                                            Apa Anda Yakin?
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        Data yang sudah anda inputkan tidak dapat dirubah
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                                        <a href="successCheckout.html" class="btn btn-primary">
+                                            Lanjutkan
+                                        </a>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section-footer mt-5 mb-4 border-top" data-aos="fade-up">
+        <div class="container pt-5 pb-5">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <img src="frontend/images/logo-footer.png" alt="logo-footer" class="logoFooter">
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <h5>Jelajahi</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Peta Kawasan</a></li>
+                                <li><a href="#">Form Pendidikan</a></li>
+                                <li><a href="#">Form Penelitian</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <h5>Bantuan</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Daftar Akun</a></li>
+                                <li><a href="#">Lupa Password</a></li>
+                                <li><a href="#">Penggunaan Sistem</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                            <h5>Sosial Media</h5>
+                            <ul class="list-unstyled">
+                                <div class="d-flex justify-content-start">
+                                    <li><a href="https://instagram.com/adrianmulyawan" target="_blank">
+                                        <img src="frontend/images/logo-fb.png" class="socmed-icon">
+                                    </a></li>
+                                    <li><a href="#">
+                                        <img src="frontend/images/logo-ig.png" class="socmed-icon">
+                                    </a></li>
+                                    <li><a href="#">
+                                        <img src="frontend/images/logo-twitter.png" class="socmed-icon">
+                                    </a></li>
+                                    <li><a href="#">
+                                        <img src="frontend/images/logo-whatsapp.png" class="socmed-icon">
+                                    </a></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row border-top justify-content-center align-items-center pt-4">
+                <div class="col-auto text-gray-500 font-weight-light">
+                    Copyright 2021 © Dinas Kelautan dan Perikanan Kalimantan Barat
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="frontend/libraries/jquery/jquery-3.6.0.js"></script>
+    <script src="frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
+    <script src="frontend/libraries/retina/retina.min.js"></script>
+    <script src="frontend/libraries/xzoom/xzoom.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Xzoom
+            $('.xzoom, .xzoom-gallery').xzoom({
+                zoomwidth: 500,
+                title: false,
+                tint: '#333',
+                xoffset: 15,
+            });
+
+            // Gijgo
+            $('.datepicker').datepicker({
+                uiLibrary: 'bootstrap4',
+                icons: {
+                    rightIcon: '<img src="frontend/images/calendar_icon.png" height="19">'
+                }
+            });
+            $('.datepicker1').datepicker({
+                uiLibrary: 'bootstrap4',
+                icons: {
+                    rightIcon: '<img src="frontend/images/calendar_icon.png" height="19">'
+                }
+            });
+        });
+    </script>
+    <script src="frontend/libraries/gijgo/js/gijgo.js"></script>
+</body>
+</html>

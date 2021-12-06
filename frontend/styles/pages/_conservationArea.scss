@@ -1,0 +1,49 @@
+.section-conservation-text {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    p {
+        font-size: 16px;
+        color: #051334;
+        font-weight: 300;
+    }
+}
+
+.section-conservation-area-list {
+    .section-conservation-area {
+        .card {
+            border-radius: 10px;
+
+            .card-img-top {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .card-title {
+                font-size: 20px;
+                font-weight: 600;
+            }
+            .card-location {
+                margin-top: 6px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                color: #B1B1B1;
+                font-weight: normal;
+            }
+            .card-text {
+                font-size: 14px;
+                color: #B1B1B1;
+                font-weight: normal;
+            }
+            .btn-detail-conservation {
+                float: right;
+                background-color: #FF9E53;
+                color: #fff;
+                font-weight: 600;
+            }
+        }
+    }
+}

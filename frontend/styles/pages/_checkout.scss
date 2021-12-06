@@ -1,0 +1,229 @@
+.section-details-header {
+    min-height: 310px;
+    background-color: #041B50;
+    margin-top: -76px;
+}
+
+.section-details-content {
+    margin-top: -180px;
+    min-height: 100vh;
+
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    
+    .breadcrumb-item {
+        &.active {
+            font-weight: bold;
+            color: white;
+        }
+    }
+
+    .card-details {
+        padding: 25px;
+        border-radius: 10px;
+
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        .date {
+            .inputDate {
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .datepicker {
+                width: 240px;
+            }
+            .datepicker1 {
+                width: 240px;
+            }
+            .gj-datepicker {
+                .datepicker {
+                    border-right: 0;
+                }
+        
+                .datepicker1 {
+                    border-right: 0;
+                }
+        
+                .input-group-append {
+                    .btn {
+                        padding-right: 30px;
+                    }
+                }
+            }
+            .btn-submits {
+                margin-left: 30px;
+                background-color: #041B50;
+                color: #fff;
+                size: 20px;
+                font-weight: 500;
+            }
+        }
+        .attendee {
+            h2 {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            thead {
+                font-size: 20px;
+                font-weight: normal;
+            }
+        }
+        .member {
+            h2 {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            .input-name {
+                width: 155px;
+            }
+            .input-nationality {
+                width: 160px;
+            }
+            .input-alamat {
+                width: 350px;
+            }
+            .input-telpon {
+                width: 231px;
+            }
+            .custom-file {
+                width: 320px;
+            }
+            .btn-add-member {
+                margin-left: 20px;
+                background-color: #041B50;
+                color: #fff;
+                size: 20px;
+                font-weight: 500;
+            }
+        }
+        .tools {
+            h2 {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+        }
+        .add-tools {
+            h2 {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 15px;
+                margin-top: 20px;
+            }
+            .input-alat-selam {
+                width: 223px;
+            }
+            .input-alat-seluncur {
+                width: 223px;
+            }
+            .input-kamera {
+                width: 223px;
+            }
+            .input-jetski {
+                width: 240px;
+            }
+            .input-kapal {
+                width: 240px;
+            }
+            .btn-add-tools {
+                margin-left: 20px;
+                background-color: #041B50;
+                color: #fff;
+                size: 20px;
+                font-weight: 500;
+            }
+        }
+        .note-tools {
+            background-color: #F8F8F8;
+            padding: 10px;
+            margin-top: 16px;
+            max-width: 525px;
+            h3 {
+                font-size: 14px;
+                font-weight: 700;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        .upload-research-education {
+            margin-top: 10px;
+            h2 {
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 16px;
+            }
+        }
+        .note-research {
+            background-color: #F8F8F8;
+            padding: 10px;
+            margin-top: 16px;
+            max-width: 525px;
+            h3 {
+                font-size: 14px;
+                font-weight: 700;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .card-right {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .conservation-checkout {
+            tr {
+                margin-bottom: 10px;
+            }
+            th {
+                font-size: 18px;
+                font-weight: 600;
+            }
+            td {
+                font-size: 16px;
+                font-weight: normal;
+                color: #B1B1B1;
+            }
+            td.total-price {
+                font-weight: 600;
+                color: #041B50;
+            }
+        }
+    }
+    .join-container {
+        margin-top: -18px;
+    }
+    .btn-join-now {
+        background-color: #FF9E53;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    
+        &:hover {
+            background-color: #FFAA69;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+

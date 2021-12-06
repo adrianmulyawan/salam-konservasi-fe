@@ -357,6 +357,11 @@ body {
   font-weight: lighter;
 }
 
+.section-details-content .card-details .entrance-fee h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .section-details-content .card-details .features {
   margin-top: 30px;
 }
@@ -389,138 +394,58 @@ body {
   height: 50px;
 }
 
-.section-details-content .gallery .xzoom-container {
+.section-details-content .card-details .gallery .xzoom-container {
   display: block;
 }
 
-.section-details-content .gallery .xzoom-container .xzoom {
+.section-details-content .card-details .gallery .xzoom-container .xzoom {
   width: 100%;
   -webkit-box-shadow: none;
           box-shadow: none;
   margin-bottom: 10px;
 }
 
-.section-details-content .gallery .xzoom-container .xactive {
+.section-details-content .card-details .gallery .xzoom-container .xactive {
   border: 4px solid #FF9E53;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
+.section-details-content .card-right {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .section-details-content .card-right h2 {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.section-details-content .card-right .conservation-information th {
+.section-details-content .card-right .conservation-checkout th {
   font-size: 18px;
   font-weight: 600;
 }
 
-.section-details-content .card-right .conservation-information td {
+.section-details-content .card-right .conservation-checkout td {
   font-size: 16px;
   font-weight: normal;
+  color: #B1B1B1;
 }
 
-.section-details-content .card-right .purposes {
-  margin-top: 20px;
+.section-details-content .join-container {
+  margin-top: -18px;
 }
 
-.section-details-content .card-right .purposes h3 {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.section-details-content .card-right .entrance-fee h2 {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.section-details-content .card-right .entrance-fee .tourism h3 {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.section-details-content .card-right .entrance-fee .tourism .tourism-price th {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.section-details-content .card-right .entrance-fee .tourism .tourism-price td {
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.section-details-content .card-right .entrance-fee .research {
-  margin-top: 10px;
-}
-
-.section-details-content .card-right .entrance-fee .research h3 {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.section-details-content .card-right .entrance-fee .research .research-price th {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.section-details-content .card-right .entrance-fee .research .research-price td {
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.section-details-content .card-right .entrance-fee .education {
-  margin-top: 10px;
-}
-
-.section-details-content .card-right .entrance-fee .education h3 {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.section-details-content .card-right .entrance-fee .education .education-price th {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.section-details-content .card-right .entrance-fee .education .education-price td {
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.section-details-content .card-right .tools {
-  margin-top: 20px;
-}
-
-.section-details-content .card-right .tools h2 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.section-details-content .card-right .tools .tools-list .tools-price th {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.section-details-content .card-right .tools .tools-list .tools-price td {
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.section-details-content .card-right .join-container {
-  margin-top: 30px;
-}
-
-.section-details-content .card-right .btn-join-now {
+.section-details-content .btn-join-now {
   background-color: #FF9E53;
   color: white;
   font-size: 20px;
   font-weight: 600;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.section-details-content .card-right .btn-join-now:hover {
+.section-details-content .btn-join-now:hover {
   background-color: #FFAA69;
   color: white;
   font-size: 20px;
@@ -575,12 +500,346 @@ body {
   font-size: 20px;
   font-weight: 600;
   border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .section-events .section-event-conservation .card-conservation-event .conservation-event-detail .btn-event-detail:hover {
   background-color: #FFAA69;
   color: white;
   font-size: 20px;
+  font-weight: 600;
+}
+
+.section-details-header {
+  min-height: 310px;
+  background-color: #041B50;
+  margin-top: -76px;
+}
+
+.section-details-content {
+  margin-top: -180px;
+  min-height: 100vh;
+}
+
+.section-details-content .breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.section-details-content .breadcrumb-item.active {
+  font-weight: bold;
+  color: white;
+}
+
+.section-details-content .card-details {
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.section-details-content .card-details h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.section-details-content .card-details p {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.section-details-content .card-details .date .inputDate {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.section-details-content .card-details .date .datepicker {
+  width: 240px;
+}
+
+.section-details-content .card-details .date .datepicker1 {
+  width: 240px;
+}
+
+.section-details-content .card-details .date .gj-datepicker .datepicker {
+  border-right: 0;
+}
+
+.section-details-content .card-details .date .gj-datepicker .datepicker1 {
+  border-right: 0;
+}
+
+.section-details-content .card-details .date .gj-datepicker .input-group-append .btn {
+  padding-right: 30px;
+}
+
+.section-details-content .card-details .date .btn-submits {
+  margin-left: 30px;
+  background-color: #041B50;
+  color: #fff;
+  size: 20px;
+  font-weight: 500;
+}
+
+.section-details-content .card-details .attendee h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.section-details-content .card-details .attendee thead {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.section-details-content .card-details .member h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.section-details-content .card-details .member .input-name {
+  width: 155px;
+}
+
+.section-details-content .card-details .member .input-nationality {
+  width: 160px;
+}
+
+.section-details-content .card-details .member .input-alamat {
+  width: 350px;
+}
+
+.section-details-content .card-details .member .input-telpon {
+  width: 231px;
+}
+
+.section-details-content .card-details .member .custom-file {
+  width: 320px;
+}
+
+.section-details-content .card-details .member .btn-add-member {
+  margin-left: 20px;
+  background-color: #041B50;
+  color: #fff;
+  size: 20px;
+  font-weight: 500;
+}
+
+.section-details-content .card-details .tools h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.section-details-content .card-details .add-tools h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.section-details-content .card-details .add-tools .input-alat-selam {
+  width: 223px;
+}
+
+.section-details-content .card-details .add-tools .input-alat-seluncur {
+  width: 223px;
+}
+
+.section-details-content .card-details .add-tools .input-kamera {
+  width: 223px;
+}
+
+.section-details-content .card-details .add-tools .input-jetski {
+  width: 240px;
+}
+
+.section-details-content .card-details .add-tools .input-kapal {
+  width: 240px;
+}
+
+.section-details-content .card-details .add-tools .btn-add-tools {
+  margin-left: 20px;
+  background-color: #041B50;
+  color: #fff;
+  size: 20px;
+  font-weight: 500;
+}
+
+.section-details-content .card-details .note-tools {
+  background-color: #F8F8F8;
+  padding: 10px;
+  margin-top: 16px;
+  max-width: 525px;
+}
+
+.section-details-content .card-details .note-tools h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.section-details-content .card-details .note-tools p {
+  font-size: 14px;
+}
+
+.section-details-content .card-details .upload-research-education {
+  margin-top: 10px;
+}
+
+.section-details-content .card-details .upload-research-education h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.section-details-content .card-details .note-research {
+  background-color: #F8F8F8;
+  padding: 10px;
+  margin-top: 16px;
+  max-width: 525px;
+}
+
+.section-details-content .card-details .note-research h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.section-details-content .card-details .note-research p {
+  font-size: 14px;
+}
+
+.section-details-content .card-right {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.section-details-content .card-right h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.section-details-content .card-right .conservation-checkout tr {
+  margin-bottom: 10px;
+}
+
+.section-details-content .card-right .conservation-checkout th {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-details-content .card-right .conservation-checkout td {
+  font-size: 16px;
+  font-weight: normal;
+  color: #B1B1B1;
+}
+
+.section-details-content .card-right .conservation-checkout td.total-price {
+  font-weight: 600;
+  color: #041B50;
+}
+
+.section-details-content .join-container {
+  margin-top: -18px;
+}
+
+.section-details-content .btn-join-now {
+  background-color: #FF9E53;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section-details-content .btn-join-now:hover {
+  background-color: #FFAA69;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+div.section-success {
+  height: 90vh;
+}
+
+div.section-success h1 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #041B50;
+}
+
+div.section-success p {
+  font-weight: 300;
+  font-size: 20px;
+  color: #B1B1B1;
+}
+
+div.section-success .btn-home-page {
+  border-radius: 8px;
+  background-color: #041B50;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+div.section-success .btn-dashboard {
+  border-radius: 8px;
+  background-color: #FF9E53;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-conservation-text {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.section-conservation-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.section-conservation-text p {
+  font-size: 16px;
+  color: #051334;
+  font-weight: 300;
+}
+
+.section-conservation-area-list .section-conservation-area .card {
+  border-radius: 10px;
+}
+
+.section-conservation-area-list .section-conservation-area .card .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.section-conservation-area-list .section-conservation-area .card .card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.section-conservation-area-list .section-conservation-area .card .card-location {
+  margin-top: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #B1B1B1;
+  font-weight: normal;
+}
+
+.section-conservation-area-list .section-conservation-area .card .card-text {
+  font-size: 14px;
+  color: #B1B1B1;
+  font-weight: normal;
+}
+
+.section-conservation-area-list .section-conservation-area .card .btn-detail-conservation {
+  float: right;
+  background-color: #FF9E53;
+  color: #fff;
   font-weight: 600;
 }
 

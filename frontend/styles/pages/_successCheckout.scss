@@ -1,0 +1,31 @@
+div.section-success {
+    height: 90vh;
+
+    h1 {
+        font-weight: 600;
+        font-size: 26px;
+        color: #041B50;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 20px;
+        color: #B1B1B1;
+    }
+
+    .btn-home-page {
+        border-radius: 8px;
+        background-color: #041B50;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .btn-dashboard {
+        border-radius: 8px;
+        background-color: #FF9E53;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
