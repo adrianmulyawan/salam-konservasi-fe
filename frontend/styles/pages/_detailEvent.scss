@@ -1,0 +1,158 @@
+.section-details-events-header {
+    min-height: 310px;
+    background-color: #041B50;
+    margin-top: -76px;
+}
+
+.section-details-events-content {
+    margin-top: -180px;
+    min-height: 100vh;
+
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    
+    .breadcrumb-item {
+        &.active {
+            font-weight: bold;
+            color: white;
+        }
+    }
+
+    .card.card-details {
+        padding: 10px;
+        border-radius: 10px;
+
+        .img-detail-header {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-bottom: 16px;
+        }
+
+        .conservation-events-name {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .features-events {
+            margin-top: 24px;
+
+            h3 {
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+            p {
+                font-size: 14px;
+                font-weight: normal;
+            }
+
+            .description {
+                margin-left: 10px;
+                overflow: hidden;
+                float: left;
+            }
+
+            .features-image-events {
+                float: left;
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        p.about-events {
+            margin-top: 16px;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+    }
+
+    .card-more-events {
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .card.card-events {
+            border-radius: 10px;
+
+            .img-header {
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+            .card-body {
+                h5 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    a {
+                        color: #041B50;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.section-events {
+    margin-top: 30px;
+    .card-events {
+        h2 {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .section-event-conservation {
+        .card-conservation-event {
+            border-radius: 10px;
+            margin-bottom: 10px;
+            .conservation-event-title {
+                h5 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    padding-left: 10px;
+                    padding-top: 10px;
+                    padding-bottom: 5px;
+                }
+            }
+            .conservation-event-date {
+                font-size: 12px;
+                font-weight: normal;
+                padding-left: 10px;
+                padding-bottom: 5px;
+            }
+            .conservation-event-location {
+                font-size: 12px;
+                font-weight: normal;
+                padding-left: 10px;
+                padding-bottom: 5px;
+            }
+            .conservation-event-detail {
+                .btn-event-detail {
+                    background-color: #FF9E53;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 600;
+                    border-radius: 10px;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+
+                    &:hover {
+                        background-color: #FFAA69;
+                        color: white;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

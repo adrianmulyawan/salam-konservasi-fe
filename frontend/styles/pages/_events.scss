@@ -1,0 +1,110 @@
+.navbar-border {
+    border: 1px solid #E4E6EB;
+}
+
+.section-conservation-events {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    p {
+        font-size: 16px;
+        color: #051334;
+        font-weight: 300;
+    }
+}
+
+.section-conservation-events-list {
+    .section-conservation-area-events-new {
+        .card {
+            padding: 0px;
+            border-radius: 10px;
+
+            .header-image {
+                max-width: 508px;
+                border-radius: 10px;
+            }
+
+            .card-body {
+                h5.card-title {
+                    font-size: 28px;
+                    font-weight: 700;
+                    a {
+                        color: #041B50;
+                    }
+                }
+                .card-date {
+                    font-size: 18px;
+                    color: #B1B1B1;
+                    margin: 0;
+                }
+                .card-location-events {
+                    font-size: 18px;
+                    color: #B1B1B1;
+                    margin: 0;
+                    margin-bottom: 16px;
+                }
+                .card-text-events {
+                    font-size: 16px;
+                    color: #B1B1B1;
+                }
+            }
+        }
+    }
+
+    .section-conservation-area-events {
+        .card {
+            border-radius: 10px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+
+            .card-img-top {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .card-body {
+                .card-title {
+                    font-size: 20px;
+                    font-weight: 600;
+                    a {
+                        color: #051334;
+                    }
+                }
+                .card-post {
+                    margin-top: 6px;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    color: #B1B1B1;
+                    font-weight: normal;
+                }
+                .card-location {
+                    font-size: 14px;
+                    color: #B1B1B1;
+                    font-weight: normal;
+                }
+                
+            }
+        }
+        .see-events {
+            margin-top: -20px;
+        }
+        .btn-detail-events {
+            background-color: #FF9E53;
+            font-size: 18px;
+            font-weight: 600;
+            color: #FFF;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            &:hover {
+                background-color: #FFAA69;
+                color: white;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+    }
+}
