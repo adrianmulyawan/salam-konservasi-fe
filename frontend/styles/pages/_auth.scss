@@ -1,0 +1,39 @@
+.page-auth {
+    .row-login {
+        min-height: 70vh;
+    }
+
+    .section-conservation-auth {
+        h2 {
+            font-size: 30px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        .form-control {
+            border-radius: 8px;
+            border: 2px solid #E4E6EB;
+            // background: #f3f3f3;
+        }
+
+        .btn-login {
+            border-radius: 8px;
+            background-color: #041B50;
+            color: #fff;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        div.btn-register {
+            a {
+                border-radius: 8px;
+                background-color: #FF9E53;
+                color: #fff;
+                font-weight: 600;
+                font-size: 20px;
+                &:hover {
+                    background-color: #FFAA69;
+                }
+            }
+        }
+    }
+}

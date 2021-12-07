@@ -289,27 +289,6 @@ body {
   font-weight: 600;
 }
 
-.section-footer .logoFooter {
-  max-width: 250px;
-  margin-bottom: 20px;
-}
-
-.section-footer h5 {
-  font-size: 26px;
-  font-weight: bold;
-}
-
-.section-footer a {
-  color: #051334;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.section-footer .socmed-icon {
-  max-width: 32px;
-  margin-right: 8px;
-}
-
 .section-details-header {
   min-height: 310px;
   background-color: #041B50;
@@ -1328,6 +1307,41 @@ div.section-success .btn-dashboard {
   font-weight: 600;
 }
 
+.page-auth .row-login {
+  min-height: 70vh;
+}
+
+.page-auth .section-conservation-auth h2 {
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+.page-auth .section-conservation-auth .form-control {
+  border-radius: 8px;
+  border: 2px solid #E4E6EB;
+}
+
+.page-auth .section-conservation-auth .btn-login {
+  border-radius: 8px;
+  background-color: #041B50;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.page-auth .section-conservation-auth div.btn-register a {
+  border-radius: 8px;
+  background-color: #FF9E53;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.page-auth .section-conservation-auth div.btn-register a:hover {
+  background-color: #FFAA69;
+}
+
 .navbar-border {
   border: 1px solid #E4E6EB;
 }
@@ -1404,5 +1418,26 @@ header .btn-get-started:hover {
   color: white;
   font-size: 20px;
   font-weight: 600;
+}
+
+.section-footer .logoFooter {
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.section-footer h5 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.section-footer a {
+  color: #051334;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.section-footer .socmed-icon {
+  max-width: 32px;
+  margin-right: 8px;
 }
 /*# sourceMappingURL=main.css.map */
