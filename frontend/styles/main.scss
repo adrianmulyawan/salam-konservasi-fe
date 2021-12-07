@@ -9,12 +9,14 @@ body {
 @import "pages/home";
 @import "pages/detailConservation";
 @import "pages/checkout";
-@import "pages/successCheckout";
+// @import "pages/successCheckout";
 @import "pages/conservationArea";
 @import "pages/news";
 @import "pages/detailNews";
 @import "pages/events";
 @import "pages/detailEvent";
+@import "pages/successCheckoutRegister";
+@import "pages/auth";
 
 @import "components/navbar";
 @import "components/headerHome";

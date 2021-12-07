@@ -759,38 +759,6 @@ body {
   font-weight: 600;
 }
 
-div.section-success {
-  height: 90vh;
-}
-
-div.section-success h1 {
-  font-weight: 600;
-  font-size: 26px;
-  color: #041B50;
-}
-
-div.section-success p {
-  font-weight: 300;
-  font-size: 20px;
-  color: #B1B1B1;
-}
-
-div.section-success .btn-home-page {
-  border-radius: 8px;
-  background-color: #041B50;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-div.section-success .btn-dashboard {
-  border-radius: 8px;
-  background-color: #FF9E53;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-}
-
 .section-conservation-text {
   margin-top: 24px;
   margin-bottom: 40px;
@@ -841,10 +809,6 @@ div.section-success .btn-dashboard {
   background-color: #FF9E53;
   color: #fff;
   font-weight: 600;
-}
-
-.navbar-border {
-  border: 1px solid #E4E6EB;
 }
 
 .section-conservation-news {
@@ -1064,10 +1028,6 @@ div.section-success .btn-dashboard {
   color: white;
   font-size: 20px;
   font-weight: 600;
-}
-
-.navbar-border {
-  border: 1px solid #E4E6EB;
 }
 
 .section-conservation-events {
@@ -1334,6 +1294,42 @@ div.section-success .btn-dashboard {
   color: white;
   font-size: 20px;
   font-weight: 600;
+}
+
+div.section-success {
+  height: 90vh;
+}
+
+div.section-success h1 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #041B50;
+}
+
+div.section-success p {
+  font-weight: 300;
+  font-size: 20px;
+  color: #B1B1B1;
+}
+
+div.section-success .btn-home-page {
+  border-radius: 8px;
+  background-color: #041B50;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+div.section-success .btn-dashboard {
+  border-radius: 8px;
+  background-color: #FF9E53;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navbar-border {
+  border: 1px solid #E4E6EB;
 }
 
 .navbar-brand img {
