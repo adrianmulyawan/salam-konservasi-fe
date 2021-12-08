@@ -23,7 +23,7 @@
         <div class="container">
             <nav class="row navbar navbar-expand-lg navbar-light navbar-conservation bg-white">
                 <!-- Logo -->
-                <a href="#" class="navbar-brand">
+                <a href="index.html" class="navbar-brand">
                     <img src="frontend/images/logo-salam-konservasi.png" alt="logo-salam-konservasi">
                 </a>
 
@@ -62,18 +62,39 @@
                             <a href="#" class="nav-link">Unduh</a>
                         </li>
                     </ul>
-                    <!-- Mobil Button: Login -->
-                    <form action="login.html" class="form-inline d-sm-block d-md-none">
-                        <button class="btn btn-login my-2 my-sm-0">
-                            MASUK
-                        </button>
-                    </form>
-                    <!-- Desktop Button: Login -->
-                    <form action="login.html" class="form-inline my-2 my-lg-0 d-none d-md-block">
-                        <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
-                            MASUK
-                        </button>
-                    </form>
+                    <!-- Profile Picture & Notif: Desktop -->
+                    <ul class="navbar-nav d-none d-lg-flex">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                <img src="frontend/images/ic_profile.png" alt="" class="rounded-circle mr-2 profile-picture">
+                                Hi, Adrian
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="pemohon/dashboard.html" class="dropdown-item">Dashboard</a>
+                                <a href="#" class="dropdown-item">Pengaturan Akun</a>
+                                <div class="dropdown-divider"></div>
+                                <a href="index.html" class="dropdown-item">Logout</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-lin d-inline-block mt-3">
+                                <img src="frontend/images/ic_notif.png" alt="" height="24">
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Profile Picture & Notif: Mobile Menu -->
+                    <ul class="navbar-nav d-block d-lg-none">
+                        <li class="nav-item">
+                            <a href="pemohon/dashboard.html" class="nav-link">
+                                Hi, Adrian
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link d-inline-block">
+                                Notifikasi
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>
@@ -90,7 +111,7 @@
                 Daerah Kalimantan Barat
             </p>
 
-            <a href="#" class="btn btn-get-started px-4 py-2">
+            <a href="#conservation" class="btn btn-get-started px-4 py-2">
                 Mulai Sekarang
             </a>
         </header>

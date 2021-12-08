@@ -11,7 +11,7 @@
 }
 
 // Menu Website
-.navbar-light {
+.navbar-conservation {
     .navbar-nav {
         .nav-link {
             color: #051334;
@@ -22,6 +22,22 @@
                 color: #051334 !important;
             }
         }
+    }
+
+    .profile-picture {
+        max-height: 45px;
+    }
+
+    .notification {
+        display: inline-block;
+        min-width: 2em;
+        padding: 0.3em;
+        border-radius: 50%;
+        font-size: 10px;
+        text-align: center;
+        background-color: #FF9E53;
+        color: #fff;
+        margin-left: -10px;
     }
 }
 
