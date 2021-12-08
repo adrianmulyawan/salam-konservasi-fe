@@ -1,13 +1,18 @@
 .page-dashboard {
+    .sidebar-dashboard {
+        background-color: #041B50;
+    }
+
     #page-content-wrapper {
         background-color: #F5F5FB;
-        min-width: 100vw;
+        // min-width: 100vw;
     }
 
     #sidebar-wrapper {
         margin-top: 60px;
         min-height: 100vh;
-        margin-left: -15rem;
+        max-width: 260px;
+        margin-left: -17rem;
         transition: margin 0.25s ease-out;
 
         .sidebar-heading {
@@ -15,7 +20,7 @@
             font-size: 1.2rem;
         }
         .list-group {
-            width: 15rem;
+            width: 255px;
         }
     }
 
@@ -28,10 +33,12 @@
     }
 
     .navbar-conservation-dashboard {
+        // Jika didalam bentuk mobile
         margin-top: 0;
         background-color: #F5F5FB;
         box-shadow: 0px 4px 5px #cacad1;
 
+        // Jika ke ukuran desktop
         @include media-breakpoint-up(md) {
             background-color: transparent;
             box-shadow: none;
@@ -39,13 +46,66 @@
     }
 
     .list-group-item {
+        background-color: #041B50;
         border: 0;
         font-size: 16px;
-        color: #c5c5c5;
+        color: #fff;
 
         &.active {
             background-color: #FF9E53;
             border-right: 4px solid #fff;
+            font-weight: bold;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        #sidebar-wrapper {
+            margin-left: 0;
+            margin-top: 0px;
+        }
+
+        #page-content-wrapper {
+            min-width: 0;
+            width: 100%;
+        }
+
+        #wrapper {
+            &.togled {
+                #sidebar-wrapper {
+                    margin-left: -15rem;
+                }
+            }
+        }
+    }
+
+    .section-content {
+        margin-top: 100px;
+        margin-left: 20px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .dashboard-heading {
+            .dashboard-title {
+                font-size: 32px;
+                font-weight: 700;
+            }
+            .dashboard-subtitle {
+                font-size: 16px;
+                font-weight: 300;
+                color: #B1B1B1;
+            }
+            margin-bottom: 24px;
+        }
+
+        .dashboard-content {
+            h5 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+            }
         }
     }
 }

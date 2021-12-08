@@ -10860,15 +10860,19 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.page-dashboard .sidebar-dashboard {
+  background-color: #041B50;
+}
+
 .page-dashboard #page-content-wrapper {
   background-color: #F5F5FB;
-  min-width: 100vw;
 }
 
 .page-dashboard #sidebar-wrapper {
   margin-top: 60px;
   min-height: 100vh;
-  margin-left: -15rem;
+  max-width: 260px;
+  margin-left: -17rem;
   -webkit-transition: margin 0.25s ease-out;
   transition: margin 0.25s ease-out;
 }
@@ -10879,7 +10883,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .page-dashboard #sidebar-wrapper .list-group {
-  width: 15rem;
+  width: 255px;
 }
 
 .page-dashboard #wrapper.toggled #sidebar-wrapper {
@@ -10902,14 +10906,63 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .page-dashboard .list-group-item {
+  background-color: #041B50;
   border: 0;
   font-size: 16px;
-  color: #c5c5c5;
+  color: #fff;
 }
 
 .page-dashboard .list-group-item.active {
   background-color: #FF9E53;
   border-right: 4px solid #fff;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .page-dashboard #sidebar-wrapper {
+    margin-left: 0;
+    margin-top: 0px;
+  }
+  .page-dashboard #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  .page-dashboard #wrapper.togled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.page-dashboard .section-content {
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .page-dashboard .section-content {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+.page-dashboard .section-content .dashboard-heading {
+  margin-bottom: 24px;
+}
+
+.page-dashboard .section-content .dashboard-heading .dashboard-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.page-dashboard .section-content .dashboard-heading .dashboard-subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  color: #B1B1B1;
+}
+
+.page-dashboard .section-content .dashboard-content h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .section-stats {
@@ -12309,17 +12362,21 @@ button.btn-login:hover {
   padding-top: 15px;
 }
 
-.navbar-conservation-dashboard .navbar-nav .nav-link {
-  color: #051334;
+@media (max-width: 991.98px) {
+  .navbar-conservation-dashboard {
+    background-color: #fff !important;
+  }
 }
 
-.navbar-conservation-dashboard .navbar-nav .nav-link.active {
-  font-weight: bold;
-  color: #051334 !important;
+@media (min-width: 992px) {
+  .navbar-conservation-dashboard .navbar-nav .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .navbar-conservation-dashboard .navbar-nav .profile-picture {
-  max-height: 44px;
+  max-height: 45px;
 }
 
 .navbar-conservation-dashboard .navbar-nav .notification {
@@ -12392,5 +12449,46 @@ header .btn-get-started:hover {
 .section-footer .socmed-icon {
   max-width: 32px;
   margin-right: 8px;
+}
+
+.dashboard-content .card {
+  background-color: #FEFEFE;
+  -webkit-box-shadow: 8px 4px 15px #F1F1F8;
+          box-shadow: 8px 4px 15px #F1F1F8;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.dashboard-content .card .dashboard-card-title {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.dashboard-content .card .dashboard-card-subtitle {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.dashboard-content .card {
+  background-color: #FEFEFE;
+  -webkit-box-shadow: 8px 4px 15px #F1F1F8;
+          box-shadow: 8px 4px 15px #F1F1F8;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.dashboard-content .card .img-card-conservation {
+  width: 45px;
+  border-radius: 6px;
+}
+
+.dashboard-content .card-list {
+  margin-bottom: 16px;
+}
+
+.dashboard-content .card-list .card-body {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,19 +1,20 @@
 .navbar-conservation-dashboard {
     padding-top: 15px;
+
+    @include media-breakpoint-down(md) {
+        background-color: #fff !important;
+    }
+
     .navbar-nav {
         .nav-link {
-            color: #051334;
-
-            // class nav-link active
-            &.active {
-                font-weight: bold;
-                color: #051334 !important;
+            @include media-breakpoint-up(lg) {
+                margin-left: 10px;
+                margin-right: 10px;
             }
         }
         .profile-picture {
-            max-height: 44px;
+            max-height: 45px;
         }
-    
         .notification {
             display: inline-block;
             min-width: 2em;

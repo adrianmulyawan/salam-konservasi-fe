@@ -1,0 +1,22 @@
+.dashboard-content {
+    .card {
+        background-color: #FEFEFE;
+        box-shadow: 8px 4px 15px #F1F1F8;
+        border-radius: 8px;
+        text-decoration: none;
+
+        .img-card-conservation {
+            width: 45px;
+            border-radius: 6px;
+        }
+    }
+    .card-list {
+        margin-bottom: 16px;
+
+        .card-body {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 40px;
+        }
+    }
+}
