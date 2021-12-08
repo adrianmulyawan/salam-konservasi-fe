@@ -1360,7 +1360,7 @@ div.section-success .btn-dashboard {
 }
 
 .navbar-conservation .profile-picture {
-  max-height: 45px;
+  max-height: 44px;
 }
 
 .navbar-conservation .notification {
@@ -1372,7 +1372,7 @@ div.section-success .btn-dashboard {
   text-align: center;
   background-color: #FF9E53;
   color: #fff;
-  margin-left: -10px;
+  margin-left: -11px;
 }
 
 button.btn-login {
