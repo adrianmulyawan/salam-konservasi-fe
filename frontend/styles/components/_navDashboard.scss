@@ -1,0 +1,29 @@
+.navbar-conservation-dashboard {
+    padding-top: 15px;
+    .navbar-nav {
+        .nav-link {
+            color: #051334;
+
+            // class nav-link active
+            &.active {
+                font-weight: bold;
+                color: #051334 !important;
+            }
+        }
+        .profile-picture {
+            max-height: 44px;
+        }
+    
+        .notification {
+            display: inline-block;
+            min-width: 2em;
+            padding: 0.3em;
+            border-radius: 50%;
+            font-size: 10px;
+            text-align: center;
+            background-color: #FF9E53;
+            color: #fff;
+            margin-left: -11px;
+        }
+    }
+}

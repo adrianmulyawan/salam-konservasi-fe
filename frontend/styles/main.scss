@@ -5,6 +5,10 @@ body {
     color: #051334;
     // font-family: 'Playfair Display', serif;
 }
+@import "../libraries/bootstrap/scss/bootstrap.scss";
+
+// Dashboard
+@import "pages/dashboard";
 
 @import "pages/home";
 @import "pages/detailConservation";
@@ -18,6 +22,8 @@ body {
 @import "pages/successCheckoutRegister";
 @import "pages/auth";
 
+
 @import "components/navbar";
+@import "components/navDashboard";
 @import "components/headerHome";
 @import "components/footer";
