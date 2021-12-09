@@ -10866,6 +10866,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .page-dashboard #page-content-wrapper {
   background-color: #F5F5FB;
+  min-width: 100vw;
 }
 
 .page-dashboard #sidebar-wrapper {
@@ -10949,7 +10950,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .page-dashboard .section-content .dashboard-heading .dashboard-title {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -10963,6 +10964,21 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
+}
+
+.page-dashboard .section-content .dashboard-content .nav-pills .nav-item .nav-link {
+  font-weight: normal;
+  font-size: 18px;
+  color: #041B50;
+  border-radius: 0;
+}
+
+.page-dashboard .section-content .dashboard-content .nav-pills .nav-item .nav-link.active {
+  font-weight: 500;
+  font-size: 18px;
+  color: #041B50;
+  border-bottom: 2px solid #041B50;
+  background-color: transparent;
 }
 
 .section-stats {
@@ -12483,12 +12499,13 @@ header .btn-get-started:hover {
 }
 
 .dashboard-content .card-list {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .dashboard-content .card-list .card-body {
   font-weight: normal;
   font-size: 16px;
   line-height: 40px;
+  color: #041B50;
 }
 /*# sourceMappingURL=main.css.map */

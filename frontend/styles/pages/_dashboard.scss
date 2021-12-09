@@ -5,7 +5,7 @@
 
     #page-content-wrapper {
         background-color: #F5F5FB;
-        // min-width: 100vw;
+        min-width: 100vw;
     }
 
     #sidebar-wrapper {
@@ -89,7 +89,7 @@
 
         .dashboard-heading {
             .dashboard-title {
-                font-size: 32px;
+                font-size: 24px;
                 font-weight: 700;
             }
             .dashboard-subtitle {
@@ -105,6 +105,25 @@
                 font-style: normal;
                 font-weight: 500;
                 font-size: 18px;
+            }
+
+            .nav-pills {
+                .nav-item {
+                    .nav-link {
+                        font-weight: normal;
+                        font-size: 18px;
+                        color: #041B50;
+                        border-radius: 0;
+
+                        &.active {
+                            font-weight: 500;
+                            font-size: 18px;
+                            color: #041B50;
+                            border-bottom: 2px solid #041B50;
+                            background-color: transparent;
+                        }
+                    }
+                }
             }
         }
     }
