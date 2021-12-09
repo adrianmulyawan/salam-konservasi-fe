@@ -24,7 +24,7 @@
                 <!-- Gambar/Logo Sidebar -->
                 <div class="sidebar-heading text-center">
                     <a href="../indexAuthUser.html">
-                        <img src="../frontend/images/dashboard/dashboard_ic.svg" class="my-4">
+                        <img src="../frontend/images/dashboard/dashboard_ic.svg" alt="" class="my-4">
                     </a>
                 </div>
                 <!-- Menu Sidebar -->
@@ -38,10 +38,10 @@
                     <a href="../pemohon/dashboardPembayaran.html" class="list-group-item list-group-item-action">
                         Pembayaran Retribusi
                     </a>
-                    <a href="../pemohon/dashboarSurat.html" class="list-group-item list-group-item-action active">
+                    <a href="../pemohon/dashboarSurat.html" class="list-group-item list-group-item-action">
                         Surat Izin Masuk
                     </a>
-                    <a href="../pemohon/dashboardSetting.html" class="list-group-item list-group-item-action">
+                    <a href="../pemohon/dashboardSetting.html" class="list-group-item list-group-item-action active">
                         Pengaturan Akun
                     </a>
                     <a href="../index.html" class="list-group-item list-group-item-action mt-5">
@@ -110,74 +110,51 @@
                     <div class="container-fluid">
                         <!-- 1. Heading -->
                         <div class="dashboard-heading">
-                            <h2 class="dashboard-title">
-                                Surat Izin Masuk Kawasan Konservasi
-                            </h2>
+                            <h2 class="dashboard-title">Pengaturan Akun</h2>
                             <p class="dashboard-subtitle">
-                                Halaman Unduh Seluruh Surat Izin Masuk Kawasan Konservasi Perairan Daerah 
+                                Perbarui Profile Anda Saat Ini
                             </p>
                         </div>
                         <div class="dashboard-content">
-                            <!-- 3.Surat Izin Izin Masuk Kawasan -->
-                            <div class="row mt-3">
-                                <div class="col-12 mt-2">
-                                    <!-- 3.1 Recent 1 -->
-                                    <a href="#" class="card card-list d-block">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <img src="../frontend/images/dashboard/image-pengajaun1.png" class="img-card-conservation">
+                            <div class="row">
+                                <div class="col-12">
+                                    <form action="#" method="post">
+                                        <div class="card card-edit-profile">
+                                            <div class="card-body">
+                                                <div class="form-group">
+                                                    <label for="inputName">
+                                                        Nama
+                                                    </label>
+                                                    <input type="text" name="nama_lengkap" class="form-control" id="inputName" value="Adrian Mulyawan" autofocus>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    KKPD Pulau Randayan
+                                                <div class="form-group">
+                                                    <label for="inputEmail">
+                                                        Email
+                                                    </label>
+                                                    <input type="email" name="email" class="form-control" id="inputEmail" value="adrianmulyawan666@gmail.com">
                                                 </div>
-                                                <div class="col-md-4">
-                                                    Pariwisata
+                                                <div class="form-group">
+                                                    <label for="inputPassword">
+                                                        Password
+                                                    </label>
+                                                    <input type="password" name="email" class="form-control" id="inputPassword" value="kepolu">
                                                 </div>
-                                                <div class="col-md-2 d-none d-md-block">
-                                                    <img src="../frontend/images/dashboard/ic_arrow.svg">
+                                                <div class="form-group">
+                                                    <label for="inputAddress">
+                                                        Alamat
+                                                    </label>
+                                                    <input type="text" name="address" class="form-control" id="inputAddress" value="Jl Sui Raya Dalam Komplek Taman Sui Raya Blok H2">
                                                 </div>
+                                                <div class="form-group">
+                                                    <label for="inputPhone">
+                                                        No Telpon
+                                                    </label>
+                                                    <input type="text" name="address" class="form-control" id="inputPhone" value="082154590559">
+                                                </div>
+                                                <button type="submit" class="btn btn-save-data px-5 mt-3">Simpan Data</button>
                                             </div>
                                         </div>
-                                    </a>
-                                    <!-- 3.1 Recent 2 -->
-                                    <a href="#" class="card card-list d-block">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <img src="../frontend/images/dashboard/image-pengajaun2.png" class="img-card-conservation">
-                                                </div>
-                                                <div class="col-md-4">
-                                                    KKPD Paloh
-                                                </div>
-                                                <div class="col-md-4">
-                                                    Penelitian
-                                                </div>
-                                                <div class="col-md-2 d-none d-md-block">
-                                                    <img src="../frontend/images/dashboard/ic_arrow.svg">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <!-- 3.1 Recent 3 -->
-                                    <a href="#" class="card card-list d-block">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-md-2">
-                                                    <img src="../frontend/images/dashboard/image-pengajaun3.png" class="img-card-conservation">
-                                                </div>
-                                                <div class="col-md-4">
-                                                    KKPD Paloh
-                                                </div>
-                                                <div class="col-md-4">
-                                                    Pariwisata
-                                                </div>
-                                                <div class="col-md-2 d-none d-md-block">
-                                                    <img src="../frontend/images/dashboard/ic_arrow.svg">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
+                                    </form>
                                 </div>
                             </div>
                         </div>

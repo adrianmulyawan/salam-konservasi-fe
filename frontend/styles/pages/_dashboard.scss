@@ -125,6 +125,19 @@
                     }
                 }
             }
+
+            .card-edit-profile {
+                padding: 10px;
+
+                .btn-save-data {
+                    float: right;
+                    background-color: #FF9E53;
+                    color: #fff;
+                    font-weight: 500;
+                    margin-top: 24px;
+                    border-radius: 8px;
+                }
+            }
         }
     }
 }
