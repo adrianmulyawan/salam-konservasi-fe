@@ -110,9 +110,11 @@
                     <div class="container-fluid">
                         <!-- 1. Heading -->
                         <div class="dashboard-heading">
-                            <h2 class="dashboard-title">Pengajuan Izin Masuk Kawasan</h2>
+                            <h2 class="dashboard-title">
+                                Pembayaran Retribusi Izin Masuk Kawasan
+                            </h2>
                             <p class="dashboard-subtitle">
-                                Seluruh Daftar Pengajuan Izin Masuk Kawasan Konservasi
+                                Seluruh Daftar Pembayaran Retribusi Izin Masuk Kawasan Konservasi
                             </p>
                         </div>
                         <div class="dashboard-content">
@@ -122,22 +124,23 @@
                                     <!-- Tabs: Belum Diproses, Disetujui, Ditolak, Gagal -->
                                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                          <a class="nav-link active" id="pills-pending-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
-                                              Belum Diproses
+                                          <a class="nav-link active" id="pills-pending-transaction-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                                              Belum Dibayar
                                           </a>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                          <a class="nav-link" id="pills-disetujui-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Disetujui</a>
+                                          <a class="nav-link" id="pills-paid-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                              Terbayar
+                                          </a>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                          <a class="nav-link" id="pills-ditolak-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Ditolak</a>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                            <a class="nav-link" id="pills-gagal-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Gagal</a>
+                                            <a class="nav-link" id="pills-failed-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                                Gagal
+                                            </a>
                                         </li>
                                     </ul>
                                     <div class="tab-content" id="pills-tabContent">
-                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-pending-tab">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-pending-transaction-tab">
                                             <!-- 2.1 Recent 1 -->
                                             <a href="#" class="card card-list d-block">
                                                 <div class="card-body">
@@ -152,7 +155,7 @@
                                                             Pariwisata
                                                         </div>
                                                         <div class="col-md-3">
-                                                            12 Januari, 2020
+                                                            Rp 150.000,00
                                                         </div>
                                                         <div class="col-md-1 d-none d-md-block">
                                                             <img src="../frontend/images/dashboard/ic_arrow.svg">
@@ -174,7 +177,7 @@
                                                             Penelitian
                                                         </div>
                                                         <div class="col-md-3">
-                                                            09 Januari, 2020
+                                                            Rp 250.000,00
                                                         </div>
                                                         <div class="col-md-1 d-none d-md-block">
                                                             <img src="../frontend/images/dashboard/ic_arrow.svg">
@@ -196,7 +199,7 @@
                                                             Penelitian
                                                         </div>
                                                         <div class="col-md-3">
-                                                            01 Januari, 2020
+                                                            Rp 100.000,00
                                                         </div>
                                                         <div class="col-md-1 d-none d-md-block">
                                                             <img src="../frontend/images/dashboard/ic_arrow.svg">
@@ -218,7 +221,7 @@
                                                             Pendidikan
                                                         </div>
                                                         <div class="col-md-3">
-                                                            17 Desember, 2020
+                                                            Rp 350.000,00
                                                         </div>
                                                         <div class="col-md-1 d-none d-md-block">
                                                             <img src="../frontend/images/dashboard/ic_arrow.svg">
@@ -240,7 +243,7 @@
                                                             Pariwisata
                                                         </div>
                                                         <div class="col-md-3">
-                                                            30 November, 2020
+                                                            Rp 100.000,00
                                                         </div>
                                                         <div class="col-md-1 d-none d-md-block">
                                                             <img src="../frontend/images/dashboard/ic_arrow.svg">
@@ -249,7 +252,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-disetujui-tab">
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-paid-tab">
                                             <!-- 2.1 Recent 1 -->
                                             <a href="#" class="card card-list d-block">
                                                 <div class="card-body">
@@ -264,7 +267,7 @@
                                                             Pariwisata
                                                         </div>
                                                         <div class="col-md-3">
-                                                            12 Januari, 2020
+                                                            Rp 150.000,00
                                                         </div>
                                                         <div class="col-md-1 d-none d-md-block">
                                                             <img src="../frontend/images/dashboard/ic_arrow.svg">
@@ -286,7 +289,7 @@
                                                             Penelitian
                                                         </div>
                                                         <div class="col-md-3">
-                                                            09 Januari, 2020
+                                                            Rp 250.000,00
                                                         </div>
                                                         <div class="col-md-1 d-none d-md-block">
                                                             <img src="../frontend/images/dashboard/ic_arrow.svg">
@@ -308,51 +311,7 @@
                                                             Penelitian
                                                         </div>
                                                         <div class="col-md-3">
-                                                            01 Januari, 2020
-                                                        </div>
-                                                        <div class="col-md-1 d-none d-md-block">
-                                                            <img src="../frontend/images/dashboard/ic_arrow.svg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <!-- 2.1 Recent 4 -->
-                                            <a href="#" class="card card-list d-block">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-md-1">
-                                                            <img src="../frontend/images/dashboard/image-pengajaun1.png" class="img-card-conservation">
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            KKPD Kubu Raya
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            Pendidikan
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            17 Desember, 2020
-                                                        </div>
-                                                        <div class="col-md-1 d-none d-md-block">
-                                                            <img src="../frontend/images/dashboard/ic_arrow.svg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <!-- 2.1 Recent 5 -->
-                                            <a href="#" class="card card-list d-block">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-md-1">
-                                                            <img src="../frontend/images/dashboard/image-pengajaun1.png" class="img-card-conservation">
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            KKPD Kayong Utara
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            Pariwisata
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            30 November, 2020
+                                                            Rp 100.000,00
                                                         </div>
                                                         <div class="col-md-1 d-none d-md-block">
                                                             <img src="../frontend/images/dashboard/ic_arrow.svg">
@@ -361,7 +320,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-ditolak-tab">
+                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-failed-tab">
                                             <!-- 2.1 Recent 1 -->
                                             <a href="#" class="card card-list d-block">
                                                 <div class="card-body">
@@ -376,53 +335,7 @@
                                                             Pariwisata
                                                         </div>
                                                         <div class="col-md-3">
-                                                            12 Januari, 2020
-                                                        </div>
-                                                        <div class="col-md-1 d-none d-md-block">
-                                                            <img src="../frontend/images/dashboard/ic_arrow.svg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                            <!-- 2.1 Recent 2 -->
-                                            <a href="#" class="card card-list d-block">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-md-1">
-                                                            <img src="../frontend/images/dashboard/image-pengajaun2.png" class="img-card-conservation">
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            KKPD Paloh
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            Penelitian
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            09 Januari, 2020
-                                                        </div>
-                                                        <div class="col-md-1 d-none d-md-block">
-                                                            <img src="../frontend/images/dashboard/ic_arrow.svg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-gagal-tab">
-                                            <!-- 2.1 Recent 1 -->
-                                            <a href="#" class="card card-list d-block">
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-md-1">
-                                                            <img src="../frontend/images/dashboard/image-pengajaun1.png" class="img-card-conservation">
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            KKPD Pulau Randayan
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            Pariwisata
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            12 Januari, 2020
+                                                            Rp 150.000,00
                                                         </div>
                                                         <div class="col-md-1 d-none d-md-block">
                                                             <img src="../frontend/images/dashboard/ic_arrow.svg">
