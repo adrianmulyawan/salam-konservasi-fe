@@ -10,6 +10,39 @@
             border-radius: 6px;
         }
     }
+
+    .card-col-4 {
+        padding-left: 16px;
+        padding-right: 16px;
+        .card-col-4-title {
+            font-weight: normal;
+            font-size: 16px;
+            color: #041B50;
+            padding-top: 16px;
+        }
+        .card-col-4-subtitle {
+            font-weight: normal;
+            font-size: 14px;
+            color: #041B50;
+            padding-bottom: 16px;
+        }
+        .card-body-user {
+            padding: 10px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 40px;
+            color: #041B50;
+
+            .card-photo-user {
+                img {
+                    max-width: 40px;
+                    border-radius: 6px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
     .card-list {
         margin-bottom: 8px;
 

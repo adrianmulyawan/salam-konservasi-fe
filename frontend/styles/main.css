@@ -12511,6 +12511,39 @@ header .btn-get-started:hover {
   border-radius: 6px;
 }
 
+.dashboard-content .card-col-4 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.dashboard-content .card-col-4 .card-col-4-title {
+  font-weight: normal;
+  font-size: 16px;
+  color: #041B50;
+  padding-top: 16px;
+}
+
+.dashboard-content .card-col-4 .card-col-4-subtitle {
+  font-weight: normal;
+  font-size: 14px;
+  color: #041B50;
+  padding-bottom: 16px;
+}
+
+.dashboard-content .card-col-4 .card-body-user {
+  padding: 10px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  color: #041B50;
+}
+
+.dashboard-content .card-col-4 .card-body-user .card-photo-user img {
+  max-width: 40px;
+  border-radius: 6px;
+  line-height: 20px;
+}
+
 .dashboard-content .card-list {
   margin-bottom: 8px;
 }
