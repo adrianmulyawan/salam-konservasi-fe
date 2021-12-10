@@ -32,7 +32,7 @@
                     <a href="../super-admin/dashboard.html" class="list-group-item list-group-item-action">
                         Dashboard
                     </a>
-                    <a href="../kelolaKawasan/dashboardKelolaKawasan.html" class="list-group-item list-group-item-action active">
+                    <a href="../super-admin/dashboardKelolaKawasan.html" class="list-group-item list-group-item-action active">
                         Kelola Kawasan Konservasi
                     </a>
                     <a href="../super-admin/dashboardKelolaGaleri.html" class="list-group-item list-group-item-action">
@@ -145,7 +145,7 @@
                         <div class="dashboard-heading">
                             <h2 class="dashboard-title">Kelola Kawasan Konservasi</h2>
                             <p class="dashboard-subtitle">
-                                Tambah Data Kawasan Konservasi
+                                Ubah Data Kawasan Konservasi
                             </p>
                         </div>
                         <div class="dashboard-content">
@@ -158,25 +158,27 @@
                                                     <label for="inputName">
                                                         Nama Kawasan
                                                     </label>
-                                                    <input type="text" name="nama_kawasan" class="form-control" id="inputName" placeholder="Masukan Nama Kawasan" autofocus>
+                                                    <input type="text" name="nama_kawasan" class="form-control" id="inputName" value="KKPD Pulau Randayan" autofocus>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="inputLokasi">
                                                         Lokasi Kawasan
                                                     </label>
-                                                    <input type="text" name="lokasi_kawasan" class="form-control" id="inputLokasi" placeholder="Masukan Lokasi Kawasan">
+                                                    <input type="text" name="lokasi_kawasan" class="form-control" id="inputLokasi" value="Kabupaten Bengkayang">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="inputTentang">
                                                         Tentang Kawasan
                                                     </label>
-                                                    <textarea class="form-control" name="tentang_kawasan" id="inputTentang" rows="3" placeholder="Masukan Tentang Kawasan"></textarea>
+                                                    <textarea class="form-control" name="tentang_kawasan" id="inputTentang" rows="4">
+                                                        Kawasan Konservasi Perairan Daerah Kabupaten Bengkayang (KKPD Kabupaten Bengkayang) adalah salah satu kawasan konservasi yang ada di Kalimantan Barat, Indonesia. Dalam pembagian administratif Indonesia, KKPD Kabupaten Bengkayang berada dalam wilayah administratif Kabupaten Bengkayang. Nama lainnya adalah Kawasan Konservasi Perairan Pulau Randayan dan Pulau Lemukutan. Dasar hukumnya adalah Surat Keputusan Nomor 220 Tahun 2004.
+                                                    </textarea>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="inputLuas">
                                                         Luas Kawasan
                                                     </label>
-                                                    <input type="text" name="luas_kawasan" class="form-control" id="inputLuas" placeholder="Masukan Lokasi Kawasan">
+                                                    <input type="text" name="luas_kawasan" class="form-control" id="inputLuas" value="10.000m2">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="inputPeta">
@@ -190,24 +192,21 @@
                                                 <div class="form-group">
                                                     <label for="inputPenginapan">Tempat Penginapan</label>
                                                     <select class="form-control" id="inputPenginapan" name="tempat_penginapan">
-                                                      <option selected disabled>Pilih Tempat Penginapan (Tersedia/Tidak)</option>
-                                                      <option>Tersedia</option>
+                                                      <option selected>Tersedia</option>
                                                       <option>Tidak</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="inputResto">Tempat Makan</label>
                                                     <select class="form-control" id="inputResto" name="tempat_makan">
-                                                      <option selected disabled>Pilih Tempat Makan (Tersedia/Tidak)</option>
-                                                      <option>Tersedia</option>
+                                                      <option selected>Tersedia</option>
                                                       <option>Tidak</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="inputStatus">Status Kawasan</label>
                                                     <select class="form-control" id="inputStatus" name="status_kawasan">
-                                                      <option selected disabled>Pilih Status Kawasan (Buka/Tutup)</option>
-                                                      <option>Buka</option>
+                                                      <option selected>Buka</option>
                                                       <option>Tutup</option>
                                                     </select>
                                                 </div>
