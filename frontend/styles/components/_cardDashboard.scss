@@ -14,4 +14,18 @@
             font-weight: 600;
         }
     }
+
+    .card-conservation {
+        background-color: #FEFEFE;
+        padding: 20px;
+        border-radius: 8px;
+
+        .btn-add-data {
+            background-color: #FF9E53;
+            color: #FFF;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 6px;
+        }
+    }
 }
