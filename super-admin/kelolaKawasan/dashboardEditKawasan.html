@@ -29,10 +29,10 @@
                 </div>
                 <!-- Menu Sidebar -->
                 <div class="list-group list-group-flush">
-                    <a href="../super-admin/dashboard.html" class="list-group-item list-group-item-action active">
+                    <a href="../super-admin/dashboard.html" class="list-group-item list-group-item-action">
                         Dashboard
                     </a>
-                    <a href="../super-admin/dashboardKelolaKawasan.html" class="list-group-item list-group-item-action">
+                    <a href="../super-admin/dashboardKelolaKawasan.html" class="list-group-item list-group-item-action active">
                         Kelola Kawasan Konservasi
                     </a>
                     <a href="../super-admin/dashboardKelolaGaleri.html" class="list-group-item list-group-item-action">
@@ -143,9 +143,9 @@
                     <div class="container-fluid">
                         <!-- 1. Heading -->
                         <div class="dashboard-heading">
-                            <h2 class="dashboard-title">Pengaturan Akun</h2>
+                            <h2 class="dashboard-title">Kelola Kawasan Konservasi</h2>
                             <p class="dashboard-subtitle">
-                                Perbarui Profile Anda Saat Ini
+                                Ubah Data Kawasan Konservasi
                             </p>
                         </div>
                         <div class="dashboard-content">
@@ -156,33 +156,59 @@
                                             <div class="card-body">
                                                 <div class="form-group">
                                                     <label for="inputName">
-                                                        Nama
+                                                        Nama Kawasan
                                                     </label>
-                                                    <input type="text" name="nama_lengkap" class="form-control" id="inputName" value="Adrian Mulyawan" autofocus>
+                                                    <input type="text" name="nama_kawasan" class="form-control" id="inputName" value="KKPD Pulau Randayan" autofocus>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="inputEmail">
-                                                        Email
+                                                    <label for="inputLokasi">
+                                                        Lokasi Kawasan
                                                     </label>
-                                                    <input type="email" name="email" class="form-control" id="inputEmail" value="adrianmulyawan666@gmail.com">
+                                                    <input type="text" name="lokasi_kawasan" class="form-control" id="inputLokasi" value="Kabupaten Bengkayang">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="inputPassword">
-                                                        Password
+                                                    <label for="inputTentang">
+                                                        Tentang Kawasan
                                                     </label>
-                                                    <input type="password" name="email" class="form-control" id="inputPassword" value="kepolu">
+                                                    <textarea class="form-control" name="tentang_kawasan" id="inputTentang" rows="4">
+                                                        Kawasan Konservasi Perairan Daerah Kabupaten Bengkayang (KKPD Kabupaten Bengkayang) adalah salah satu kawasan konservasi yang ada di Kalimantan Barat, Indonesia. Dalam pembagian administratif Indonesia, KKPD Kabupaten Bengkayang berada dalam wilayah administratif Kabupaten Bengkayang. Nama lainnya adalah Kawasan Konservasi Perairan Pulau Randayan dan Pulau Lemukutan. Dasar hukumnya adalah Surat Keputusan Nomor 220 Tahun 2004.
+                                                    </textarea>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="inputAddress">
-                                                        Alamat
+                                                    <label for="inputLuas">
+                                                        Luas Kawasan
                                                     </label>
-                                                    <input type="text" name="address" class="form-control" id="inputAddress" value="Jl Sui Raya Dalam Komplek Taman Sui Raya Blok H2">
+                                                    <input type="text" name="luas_kawasan" class="form-control" id="inputLuas" value="10.000m2">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="inputPhone">
-                                                        No Telpon
+                                                    <label for="inputPeta">
+                                                        Peta Kawasan
                                                     </label>
-                                                    <input type="text" name="address" class="form-control" id="inputPhone" value="082154590559">
+                                                    <div class="custom-file">
+                                                        <input type="file" name="peta_kawaan" class="custom-file-input" id="inputPeta" required>
+                                                        <label class="custom-file-label" for="inputPeta">Masukan Peta Kawasan</label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputPenginapan">Tempat Penginapan</label>
+                                                    <select class="form-control" id="inputPenginapan" name="tempat_penginapan">
+                                                      <option selected>Tersedia</option>
+                                                      <option>Tidak</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputResto">Tempat Makan</label>
+                                                    <select class="form-control" id="inputResto" name="tempat_makan">
+                                                      <option selected>Tersedia</option>
+                                                      <option>Tidak</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputStatus">Status Kawasan</label>
+                                                    <select class="form-control" id="inputStatus" name="status_kawasan">
+                                                      <option selected>Buka</option>
+                                                      <option>Tutup</option>
+                                                    </select>
                                                 </div>
                                                 <button type="submit" class="btn btn-save-data px-5 mt-3">Simpan Data</button>
                                             </div>
