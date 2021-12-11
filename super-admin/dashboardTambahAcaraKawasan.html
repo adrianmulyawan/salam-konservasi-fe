@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- gijgo -->
+    <link rel="stylesheet" href="../frontend/libraries/gijgo/css/gijgo.css">
     <!-- css -->
     <link rel="stylesheet" href="../frontend/styles/main.css">
     <!-- data aos -->
@@ -143,9 +145,9 @@
                     <div class="container-fluid">
                         <!-- 1. Heading -->
                         <div class="dashboard-heading">
-                            <h2 class="dashboard-title">Kelola Berita Kawasan Konservasi</h2>
+                            <h2 class="dashboard-title">Kelola Acara Kawasan Konservasi</h2>
                             <p class="dashboard-subtitle">
-                                Ubah Data Berita Mengenai Kabar Terkini di Kawasan Konservasi
+                                Tambah Acara Terkini di Kawasan Konservasi
                             </p>
                         </div>
                         <div class="dashboard-content">
@@ -156,22 +158,39 @@
                                             <div class="card-body">
                                                 <div class="form-group">
                                                     <label for="inputFoto">
-                                                        Foto Berita
+                                                        Foto Acara
                                                     </label>
                                                     <div class="custom-file">
-                                                        <input type="file" name="foto_berita" class="custom-file-input" id="inputFoto" required>
-                                                        <label class="custom-file-label" for="inputFoto">Ubah Foto Berita</label>
+                                                        <input type="file" name="foto_acara" class="custom-file-input" id="inputFoto" required>
+                                                        <label class="custom-file-label" for="inputFoto">Masukan Foto Acara</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="inputJudulBerita">Judul Berita</label>
-                                                    <input type="text" name="judul_berita" class="form-control" id="inputJudulBerita" value="Penanaman 1000 Bibit Bakau di Kabupaten Kubu Raya">
+                                                    <label for="inputJudulAcara">Judul Acara</label>
+                                                    <input type="text" name="judul_acara" class="form-control" id="inputJudulAcara" placeholder="Masukan Judul Acara">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="isi_berita">Example textarea</label>
-                                                    <textarea class="form-control" name="isi_berita" id="isi_berita" rows="3">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptates a voluptate iure, quam quaerat perferendis. Optio obcaecati magni atque molestiae, natus consectetur odit doloremque inventore cumque veniam culpa iste?
-                                                    </textarea>
+                                                    <label for="InputTanggal">
+                                                        Tanggal Masuk
+                                                    </label>
+                                                    <div class="input-group mb-2 mr-sm-2">
+                                                        <input type="text" class="form-control datepicker" id="InputTanggal" name="tanggal_masuk" required placeholder="Tanggal Masuk Kawasan">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputKawasan">Tambah Lokasi Event</label>
+                                                    <select class="form-control" id="inputKawasan" name="kawasan_konservasi">
+                                                      <option selected disabled>Silahkan Pilih Lokasi Event</option>
+                                                      <option>KKPD Pulau Randayan</option>
+                                                      <option>KKPD Paloh</option>
+                                                      <option>KKPD Kubu Raya</option>
+                                                      <option>KKPD Kendawangan</option>
+                                                      <option>KKPD Kayong Utara</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputIsiAcara">Isi Acara</label>
+                                                    <textarea class="form-control" name="isi_acara" id="inputIsiAcara" rows="3" placeholder="Masukan Isi Acara"></textarea>
                                                 </div>
                                                 <button type="submit" class="btn btn-save-data px-5 mt-3">Simpan Data</button>
                                             </div>
@@ -192,6 +211,18 @@
     <script>
       AOS.init();
     </script>  
+    <script>
+        $(document).ready(function() {
+            // Gijgo
+            $('.datepicker').datepicker({
+                uiLibrary: 'bootstrap4',
+                icons: {
+                    rightIcon: '<img src="../frontend/images/calendar_icon.png" height="19">'
+                }
+            });
+        });
+    </script>
+    <script src="../frontend/libraries/gijgo/js/gijgo.js"></script>
     <script src="../frontend/libraries/retina/retina.min.js"></script>
     <script src="../frontend/scripts/hideSidebar.js"></script>
 </body>

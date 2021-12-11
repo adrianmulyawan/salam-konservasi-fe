@@ -156,21 +156,39 @@
                                             <div class="card-body">
                                                 <div class="form-group">
                                                     <label for="inputFoto">
-                                                        Foto Berita
+                                                        Foto Acara
                                                     </label>
                                                     <div class="custom-file">
-                                                        <input type="file" name="foto_berita" class="custom-file-input" id="inputFoto" required>
-                                                        <label class="custom-file-label" for="inputFoto">Ubah Foto Berita</label>
+                                                        <input type="file" name="foto_acara" class="custom-file-input" id="inputFoto" required>
+                                                        <label class="custom-file-label" for="inputFoto">Ubah Foto Acara</label>
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="inputJudulBerita">Judul Berita</label>
-                                                    <input type="text" name="judul_berita" class="form-control" id="inputJudulBerita" value="Penanaman 1000 Bibit Bakau di Kabupaten Kubu Raya">
+                                                    <label for="inputJudulAcara">Judul Acara</label>
+                                                    <input type="text" name="judul_acara" class="form-control" id="inputJudulAcara" value="Festival Pantai Paloh">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="isi_berita">Example textarea</label>
-                                                    <textarea class="form-control" name="isi_berita" id="isi_berita" rows="3">
-                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptates a voluptate iure, quam quaerat perferendis. Optio obcaecati magni atque molestiae, natus consectetur odit doloremque inventore cumque veniam culpa iste?
+                                                    <label for="InputTanggal">
+                                                        Tanggal Masuk
+                                                    </label>
+                                                    <div class="input-group mb-2 mr-sm-2">
+                                                        <input type="text" class="form-control datepicker" id="InputTanggal" name="tanggal_masuk" required value="01/04/2022">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputKawasan">Tambah Lokasi Event</label>
+                                                    <select class="form-control" id="inputKawasan" name="kawasan_konservasi">
+                                                      <option>KKPD Pulau Randayan</option>
+                                                      <option selected>KKPD Paloh</option>
+                                                      <option>KKPD Kubu Raya</option>
+                                                      <option>KKPD Kendawangan</option>
+                                                      <option>KKPD Kayong Utara</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputIsiAcara">Isi Acara</label>
+                                                    <textarea class="form-control" name="isi_acara" id="inputIsiAcara" rows="3">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aperiam excepturi blanditiis itaque, beatae impedit quae officiis placeat alias accusamus doloribus libero, quisquam adipisci quo eum! Dolore perspiciatis totam delectus!
                                                     </textarea>
                                                 </div>
                                                 <button type="submit" class="btn btn-save-data px-5 mt-3">Simpan Data</button>
