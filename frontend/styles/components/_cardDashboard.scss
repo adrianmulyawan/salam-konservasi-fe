@@ -32,4 +32,79 @@
             border-radius: 6px;
         }
     }
+
+    .card-detail-transaction {
+        .header-transaction {
+            max-width: 240px;
+            border-radius: 8px;
+        }
+
+        .transaction-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .transaction-subtitle {
+            font-size: 16px;
+            font-weight: normal;
+            color: #B1B1B1;
+            margin-top: 8px;
+        }
+
+        .data-pengunjung {
+            margin-top: 24px;
+            h5 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        .photo-identitas {
+            img {
+                max-width: 120px;
+            }
+        }
+
+        .data-bawaan-pengunjung {
+            margin-top: 0;
+            h5 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        .data-surat-penelitian-pendidikan {
+            margin-top: 0;
+            h5 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+        .data-approval {
+            margin-top: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            h5 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+
+        .btn-primary {
+            font-weight: 600;
+            color: #fff;
+            background-color: #FF9E53;
+        }
+    }
 }

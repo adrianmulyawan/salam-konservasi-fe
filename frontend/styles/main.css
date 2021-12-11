@@ -12517,6 +12517,81 @@ header .btn-get-started:hover {
   border-radius: 6px;
 }
 
+.dashboard-content .card-detail-transaction .header-transaction {
+  max-width: 240px;
+  border-radius: 8px;
+}
+
+.dashboard-content .card-detail-transaction .transaction-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.dashboard-content .card-detail-transaction .transaction-subtitle {
+  font-size: 16px;
+  font-weight: normal;
+  color: #B1B1B1;
+  margin-top: 8px;
+}
+
+.dashboard-content .card-detail-transaction .data-pengunjung {
+  margin-top: 24px;
+}
+
+.dashboard-content .card-detail-transaction .data-pengunjung h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dashboard-content .card-detail-transaction .photo-identitas img {
+  max-width: 120px;
+}
+
+.dashboard-content .card-detail-transaction .data-bawaan-pengunjung {
+  margin-top: 0;
+}
+
+.dashboard-content .card-detail-transaction .data-bawaan-pengunjung h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dashboard-content .card-detail-transaction .data-surat-penelitian-pendidikan {
+  margin-top: 0;
+}
+
+.dashboard-content .card-detail-transaction .data-surat-penelitian-pendidikan h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dashboard-content .card-detail-transaction .data-approval {
+  margin-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dashboard-content .card-detail-transaction .data-approval h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.dashboard-content .card-detail-transaction .btn-primary {
+  font-weight: 600;
+  color: #fff;
+  background-color: #FF9E53;
+}
+
 .dashboard-content .card {
   background-color: #FEFEFE;
   -webkit-box-shadow: 8px 4px 15px #F1F1F8;
