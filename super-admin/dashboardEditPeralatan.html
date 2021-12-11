@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALAM Konservasi</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../frontend/libraries/bootstrap/css/bootstrap.css">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../frontend/styles/main.css">
+    <!-- data aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="page-dashboard">
+        <div class="d-flex" id="wrapper" data-aos="fade-right">
+            <!-- 1. Sidebar -->
+            <div class="border-right sidebar-dashboard" id="sidebar-wrapper">
+                <!-- Gambar/Logo Sidebar -->
+                <div class="sidebar-heading text-center">
+                    <a href="../indexAuthUser.html">
+                        <img src="../frontend/images/dashboard/dashboard_ic.svg" alt="" class="my-4">
+                    </a>
+                </div>
+                <!-- Menu Sidebar -->
+                <div class="list-group list-group-flush">
+                    <a href="../super-admin/dashboard.html" class="list-group-item list-group-item-action">
+                        Dashboard
+                    </a>
+                    <a href="../super-admin/dashboardKelolaKawasan.html" class="list-group-item list-group-item-action">
+                        Kelola Kawasan Konservasi
+                    </a>
+                    <a href="../super-admin/dashboardKelolaGaleri.html" class="list-group-item list-group-item-action">
+                        Kelola Gallery Kawasan
+                    </a>
+                    <a href="../super-admin/dashboardKelolaBerita.html" class="list-group-item list-group-item-action">
+                        Kelola Berita Kawasan
+                    </a>
+                    <a href="../super-admin/dashboardKelolaAcara.html" class="list-group-item list-group-item-action">
+                        Kelola Acara Kawasan
+                    </a>
+                    <a href="../super-admin/dashboardKelolaTujuan.html" class="list-group-item list-group-item-action">
+                        Kelola Tujuan Masuk Kawasan
+                    </a>
+                    <a href="../super-admin/dashboardKelolaTarif.html" class="list-group-item list-group-item-action">
+                        Kelola Tarif Masuk Kawasan
+                    </a>
+                    <a href="../super-admin/dashboardKelolaPeralatan.html" class="list-group-item list-group-item-action active">
+                        Kelola Peralatan Pengunjung
+                    </a>
+                    <a href="../super-admin/dashboardKelolaUser.html" class="list-group-item list-group-item-action">
+                        Kelola User
+                    </a>
+                    <a href="../super-admin/" class="list-group-item list-group-item-action">
+                        Pengajuan Izin Masuk
+                    </a>
+                    <a href="../super-admin/" class="list-group-item list-group-item-action">
+                        Pembayaran Retribusi
+                    </a>
+                    <a href="../super-admin/" class="list-group-item list-group-item-action">
+                        Kelola Surat Izin Masuk
+                    </a>
+                    <a href="../super-admin/" class="list-group-item list-group-item-action">
+                        Surat Izin Masuk
+                    </a>
+                    <a href="../super-admin/" class="list-group-item list-group-item-action">
+                        Form Kepuasan & Kekurangan
+                    </a>
+                    <a href="../super-admin/" class="list-group-item list-group-item-action">
+                        Data Keluar Masuk Pengunjung
+                    </a>
+                    <a href="../super-admin/" class="list-group-item list-group-item-action">
+                        Pengaturan Akun
+                    </a>
+                    <a href="../index.html" class="list-group-item list-group-item-action mt-5">
+                        Keluar
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2. Dashboard Page -->
+            <div id="page-content-wrapper">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-conservation-dashboard fixed-top" data-aos="fade-down">
+                    <div class="container-fluid">
+                        <button class="btn btn-secondary d-md-none mr-auto mr-2" id="menu-toggle">
+                            &laquo; Menu
+                        </button>
+                        <!-- Navbar Humberger -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Menu-menu -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <!-- Profile Picture & Notif: Desktop -->
+                            <ul class="navbar-nav d-none d-lg-flex ml-auto">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                        <img src="../frontend/images/ic_profile.png" alt="" class="rounded-circle mr-2 profile-picture">
+                                        Hi, Adrian
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="../indexAuthUser.html" class="dropdown-item">
+                                            Halaman Utama
+                                        </a>
+                                        <a href="#" class="dropdown-item">Pengaturan Akun</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="../index.html" class="dropdown-item">Logout</a>
+                                    </div>
+                                </li>
+                                <!-- Notif -->
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-inline-block mt-2">
+                                        <img src="../frontend/images/ic_notif.png" alt="" height="24">
+                                        <div class="notification">4</div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Profile Picture & Notif: Mobile Menu -->
+                            <ul class="navbar-nav d-block d-lg-none">
+                                <li class="nav-item">
+                                    <a href="../pemohon/dashboard.html" class="nav-link">
+                                        Hi, Adrian
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-inline-block">
+                                        Notifikasi
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Content -->
+                <div class="section-content section-dashboard section-dashboard-home" data-aos="fade-up">
+                    <div class="container-fluid">
+                        <!-- 1. Heading -->
+                        <div class="dashboard-heading">
+                            <h2 class="dashboard-title">Kelola Peralatan Pengunjung</h2>
+                            <p class="dashboard-subtitle">
+                                Ubah Data Peralatan Bawaan Pengunjung
+                            </p>
+                        </div>
+                        <div class="dashboard-content">
+                            <div class="row">
+                                <div class="col-12">
+                                    <form action="#" method="post">
+                                        <div class="card card-edit-profile">
+                                            <div class="card-body">
+                                                <div class="form-group">
+                                                    <label for="inputPeralatan">
+                                                        Nama Peralatan Bawaan
+                                                    </label>
+                                                    <input type="text" name="nama_peralatan" class="form-control" id="inputPeralatan" value="Alat Selam" autofocus>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="inputHargaPeralatan">
+                                                        Harga Peralatan Bawaan
+                                                    </label>
+                                                    <input type="text" name="harga_peralatan" class="form-control" id="inputHargaPeralatan" value="20000">
+                                                </div>
+                                                <button type="submit" class="btn btn-save-data px-5 mt-3">Simpan Data</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../frontend/libraries/jquery/jquery-3.6.0.js"></script>
+    <script src="../frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
+    <script src="../frontend/libraries/retina/retina.min.js"></script>
+    <script src="../frontend/scripts/hideSidebar.js"></script>
+</body>
+</html>
