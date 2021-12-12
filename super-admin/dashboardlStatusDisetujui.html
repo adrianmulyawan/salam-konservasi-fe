@@ -176,7 +176,7 @@
                                         <img src="../frontend/images/detail-transaction/image.png" alt="header-transaction" class="header-transaction">
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="transaction-user-name mb-2">
+                                        <div class="transaction-user-name mb-3">
                                             <div class="transaction-title">
                                                 Nama Pemohon
                                             </div>
@@ -184,7 +184,7 @@
                                                 Adrian Mulyawan
                                             </div>
                                         </div>
-                                        <div class="transaction-user-employee mb-2">
+                                        <div class="transaction-user-employee mb-3">
                                             <div class="transaction-title">
                                                 Kepentingan
                                             </div>
@@ -192,7 +192,7 @@
                                                 Penelitian
                                             </div>
                                         </div>
-                                        <div class="transaction-total-user mb-2">
+                                        <div class="transaction-total-user mb-3">
                                             <div class="transaction-title">
                                                 Jumlah Orang
                                             </div>
@@ -200,7 +200,7 @@
                                                 2 Orang
                                             </div>
                                         </div>
-                                        <div class="transaction-date-entry mb-2">
+                                        <div class="transaction-date-entry">
                                             <div class="transaction-title">
                                                 Tanggal Masuk Kawasan
                                             </div>
@@ -210,7 +210,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="transaction-destination-area mb-2">
+                                        <div class="transaction-destination-area mb-3">
                                             <div class="transaction-title">
                                                 Nama Kawasan
                                             </div>
@@ -218,7 +218,7 @@
                                                 KKPD Pulau Randayan
                                             </div>
                                         </div>
-                                        <div class="transaction-total mb-2">
+                                        <div class="transaction-total mb-3">
                                             <div class="transaction-title">
                                                 Total Transaksi
                                             </div>
@@ -226,7 +226,7 @@
                                                 Rp 120.000,00
                                             </div>
                                         </div>
-                                        <div class="transaction-total-day mb-2">
+                                        <div class="transaction-total-day mb-3">
                                             <div class="transaction-title">
                                                 Jumlah Hari Masuk Kawasan
                                             </div>
@@ -234,7 +234,7 @@
                                                 3 Hari
                                             </div>
                                         </div>
-                                        <div class="transaction-date-out mb-2">
+                                        <div class="transaction-date-out">
                                             <div class="transaction-title">
                                                 Tanggal Keluar Kawasan
                                             </div>
@@ -345,20 +345,12 @@
                                 <!-- 2.5 Approval -->
                                 <div class="row form-group data-approval mt-4">
                                     <h5>Status Permohonan Pengajuan Izin Masuk Kawasan</h5>
-                                    <select class="form-control mt-3" id="inputApproval">
-                                      <option selected disabled>Ubah Status Permohonan</option>
-                                      <option>Disetujui</option>
-                                      <option>Ditolak</option>
-                                    </select>
                                 </div>
-                                <!-- 2.6 Alasan Ditolak -->
-                                <div class="row form-group data-approval mt-4">
-                                    <h5>Alasan Ditolak (Bila Pengajuan Ditolak)</h5>
-                                    <textarea class="form-control mt-3 mb-2" id="inputAlasan" rows="3"></textarea>
-                                </div>
-                                <div class="row justify-content-end mr-1">
+                                <fieldset disabled="disabled">
+                                    <input type="text" id="statusDisetujui" class="form-control" value="Disetujui">
+                                </fieldset>
+                                <div class="row justify-content-end mr-1 mt-4">
                                     <a href="../super-admin/dashboardKelolaPengajuan.html" class="btn btn-primary py-2 mr-2">Tutup</a>
-                                    <button type="submit" class="btn btn-primary py-2">Ubah Status</button>
                                 </div>
                             </div>
                         </div>

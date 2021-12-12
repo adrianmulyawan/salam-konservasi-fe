@@ -99,6 +99,26 @@
                 color: #B1B1B1;
             }
             margin-bottom: 24px;
+
+            .dashboard-transaction-title {
+                font-size: 24px;
+                font-weight: 600;
+            }
+
+            .breadcrumb {
+                background-color: transparent;
+                padding: 0;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }   
+
+            .breadcrumb-item {
+                color: #B1B1B1;
+                &.active {
+                    font-weight: bold;
+                    color: #041B50;
+                }
+            }
         }
 
         .dashboard-content {

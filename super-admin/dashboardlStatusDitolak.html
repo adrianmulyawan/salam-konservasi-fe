@@ -146,26 +146,10 @@
                     <div class="container-fluid">
                         <!-- 1. Heading -->
                         <div class="dashboard-heading">
-                            <h2 class="dashboard-transaction-title">#SALAM-89110</h2>
-                            <!-- Breadcrumb -->
-                            <div class="breadcrumb-transaction>
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item">
-                                           Pengajuan Izin Masuk Kawasan Konservasi
-                                        </li>
-                                        <li class="breadcrumb-item active" aria-current="page">
-                                            Adrian Mulyawan
-                                        </li>
-                                        <li class="breadcrumb-item active" aria-current="page">
-                                            Penelitian
-                                        </li>
-                                        <li class="breadcrumb-item active" aria-current="page">
-                                            KKPD Pulau Randayan
-                                        </li>
-                                    </ol>
-                                </nav>
-                            </div>
+                            <h2 class="dashboard-title">Kelola Kawasan Konservasi</h2>
+                            <p class="dashboard-subtitle">
+                                Daftar Kawsan Konservasi KKPD Kalimantan Barat
+                            </p>
                         </div>
                         <div class="dashboard-content">
                             <!-- 2. Table Data Kawasan -->
@@ -345,20 +329,20 @@
                                 <!-- 2.5 Approval -->
                                 <div class="row form-group data-approval mt-4">
                                     <h5>Status Permohonan Pengajuan Izin Masuk Kawasan</h5>
-                                    <select class="form-control mt-3" id="inputApproval">
-                                      <option selected disabled>Ubah Status Permohonan</option>
-                                      <option>Disetujui</option>
-                                      <option>Ditolak</option>
-                                    </select>
                                 </div>
+                                <fieldset disabled="disabled">
+                                    <input type="text" id="statusDisetujui" class="form-control" value="Ditolak">
+                                </fieldset>
                                 <!-- 2.6 Alasan Ditolak -->
                                 <div class="row form-group data-approval mt-4">
-                                    <h5>Alasan Ditolak (Bila Pengajuan Ditolak)</h5>
-                                    <textarea class="form-control mt-3 mb-2" id="inputAlasan" rows="3"></textarea>
+                                    <h5>Alasan Ditolak</h5>
                                 </div>
-                                <div class="row justify-content-end mr-1">
-                                    <a href="../super-admin/dashboardKelolaPengajuan.html" class="btn btn-primary py-2 mr-2">Tutup</a>
-                                    <button type="submit" class="btn btn-primary py-2">Ubah Status</button>
+                                <fieldset disabled="disabled">
+                                    <input class="form-control" id="disabledInput" type="text" value="Data yang anda inputkan tidak valid" disabled>
+                                </fieldset>
+                                <!-- 2.7 Button Close -->
+                                <div class="row justify-content-end mt-4 mr-0">
+                                    <a href="../super-admin/dashboardKelolaPengajuan.html" class="btn btn-primary py-2">Tutup</a>
                                 </div>
                             </div>
                         </div>
