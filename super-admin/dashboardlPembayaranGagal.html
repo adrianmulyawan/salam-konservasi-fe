@@ -58,10 +58,10 @@
                     <a href="../super-admin/dashboardKelolaUser.html" class="list-group-item list-group-item-action">
                         Kelola User
                     </a>
-                    <a href="../super-admin/dashboardKelolaPengajuan.html" class="list-group-item list-group-item-action active">
+                    <a href="../super-admin/dashboardKelolaPengajuan.html" class="list-group-item list-group-item-action">
                         Pengajuan Izin Masuk
                     </a>
-                    <a href="../super-admin/" class="list-group-item list-group-item-action">
+                    <a href="../super-admin/dashboardKelolaPembayaran.html" class="list-group-item list-group-item-action active">
                         Pembayaran Retribusi
                     </a>
                     <a href="../super-admin/" class="list-group-item list-group-item-action">
@@ -146,10 +146,26 @@
                     <div class="container-fluid">
                         <!-- 1. Heading -->
                         <div class="dashboard-heading">
-                            <h2 class="dashboard-title">Kelola Kawasan Konservasi</h2>
-                            <p class="dashboard-subtitle">
-                                Daftar Kawsan Konservasi KKPD Kalimantan Barat
-                            </p>
+                            <h2 class="dashboard-transaction-title">#SALAM-89110</h2>
+                            <!-- Breadcrumb -->
+                            <div class="breadcrumb-transaction>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                           Pengajuan Izin Masuk Kawasan Konservasi
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">
+                                            Adrian Mulyawan
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">
+                                            Penelitian
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">
+                                            KKPD Pulau Randayan
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
                         </div>
                         <div class="dashboard-content">
                             <!-- 2. Table Data Kawasan -->
@@ -160,7 +176,7 @@
                                         <img src="../frontend/images/detail-transaction/image.png" alt="header-transaction" class="header-transaction">
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="transaction-user-name mb-2">
+                                        <div class="transaction-user-name mb-3">
                                             <div class="transaction-title">
                                                 Nama Pemohon
                                             </div>
@@ -168,7 +184,7 @@
                                                 Adrian Mulyawan
                                             </div>
                                         </div>
-                                        <div class="transaction-user-employee mb-2">
+                                        <div class="transaction-user-employee mb-3">
                                             <div class="transaction-title">
                                                 Kepentingan
                                             </div>
@@ -176,7 +192,7 @@
                                                 Penelitian
                                             </div>
                                         </div>
-                                        <div class="transaction-total-user mb-2">
+                                        <div class="transaction-total-user mb-3">
                                             <div class="transaction-title">
                                                 Jumlah Orang
                                             </div>
@@ -184,7 +200,7 @@
                                                 2 Orang
                                             </div>
                                         </div>
-                                        <div class="transaction-date-entry mb-2">
+                                        <div class="transaction-date-entry">
                                             <div class="transaction-title">
                                                 Tanggal Masuk Kawasan
                                             </div>
@@ -194,7 +210,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                        <div class="transaction-destination-area mb-2">
+                                        <div class="transaction-destination-area mb-3">
                                             <div class="transaction-title">
                                                 Nama Kawasan
                                             </div>
@@ -202,7 +218,7 @@
                                                 KKPD Pulau Randayan
                                             </div>
                                         </div>
-                                        <div class="transaction-total mb-2">
+                                        <div class="transaction-total mb-3">
                                             <div class="transaction-title">
                                                 Total Transaksi
                                             </div>
@@ -210,7 +226,7 @@
                                                 Rp 120.000,00
                                             </div>
                                         </div>
-                                        <div class="transaction-total-day mb-2">
+                                        <div class="transaction-total-day mb-3">
                                             <div class="transaction-title">
                                                 Jumlah Hari Masuk Kawasan
                                             </div>
@@ -218,7 +234,7 @@
                                                 3 Hari
                                             </div>
                                         </div>
-                                        <div class="transaction-date-out mb-2">
+                                        <div class="transaction-date-out">
                                             <div class="transaction-title">
                                                 Tanggal Keluar Kawasan
                                             </div>
@@ -308,40 +324,15 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- 2.4 Surat Pengajuan Kegiatan Penelitian/Pendidikan -->
-                                <div class="row data-surat-penelitian-pendidikan">
-                                    <h5>Surat Pengajuan Untuk Penelitian / Pendidikan</h5>
-                                </div>
-                                <div class="row mt-3">
-                                    <div class="col-12">
-                                        <!-- 5.1 Recent 1 -->
-                                        <a href="#" class="card card-list d-block">
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        Permohonan_Masuk_Kawasan_DinasPariwisata.pdf
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
 
-                                <!-- 2.5 Approval -->
+                                <!-- 2.6 Approval -->
                                 <div class="row form-group data-approval mt-4">
-                                    <h5>Status Pengajuan Izin Masuk Kawasan</h5>
-                                    <input class="form-control mt-2" id="disabledInput" type="text" name="status_pembayaran" value="Ditolak" disabled>
+                                    <h5>Status Permohonan Pengajuan Izin Masuk Kawasan</h5>
+                                    <input class="form-control mt-2" id="disabledInput" type="text" name="status_pembayaran" value="Gagal" disabled>
                                 </div>
                                 
-                                <!-- 2.6 Alasan Ditolak -->
-                                <div class="row form-group data-approval mt-4">
-                                    <h5>Alasan Pengajuan Ditolak</h5>
-                                    <input class="form-control mt-2" id="disabledInput" type="text" name="status_pembayaran" value="Data yang anda masukan tidak valid" disabled>
-                                </div>
-
-                                <!-- 2.7 Button Close -->
-                                <div class="row justify-content-end mt-4 mr-0">
-                                    <a href="../super-admin/dashboardKelolaPengajuan.html" class="btn btn-primary py-2">Tutup</a>
+                                <div class="row justify-content-end mr-1 mt-4">
+                                    <a href="../super-admin/dashboardKelolaPembayaran.html" class="btn btn-primary py-2 mr-2">Tutup</a>
                                 </div>
                             </div>
                         </div>

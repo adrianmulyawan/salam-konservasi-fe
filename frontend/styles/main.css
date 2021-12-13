@@ -12595,6 +12595,31 @@ header .btn-get-started:hover {
   padding-right: 20px;
 }
 
+.dashboard-content .card-detail-transaction .data-pemilik-rekening {
+  margin-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 24px;
+}
+
+.dashboard-content .card-detail-transaction .data-pemilik-rekening h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.dashboard-content .card-detail-transaction .data-bukti-transfer {
+  margin-top: 0;
+}
+
+.dashboard-content .card-detail-transaction .data-bukti-transfer h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .dashboard-content .card-detail-transaction .data-approval {
   margin-top: 0;
   padding-left: 20px;
