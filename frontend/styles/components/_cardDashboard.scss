@@ -130,4 +130,17 @@
             background-color: #FF9E53;
         }
     }
+    
+    .btn-sim-kawasan {
+        background-color: #FF9E53;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        &:hover {
+            background-color: #FFAA69;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
 }

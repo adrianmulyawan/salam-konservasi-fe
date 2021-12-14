@@ -12638,6 +12638,20 @@ header .btn-get-started:hover {
   background-color: #FF9E53;
 }
 
+.dashboard-content .btn-sim-kawasan {
+  background-color: #FF9E53;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dashboard-content .btn-sim-kawasan:hover {
+  background-color: #FFAA69;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .dashboard-content .card {
   background-color: #FEFEFE;
   -webkit-box-shadow: 8px 4px 15px #F1F1F8;
