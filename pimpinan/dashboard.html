@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALAM Konservasi</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../frontend/libraries/bootstrap/css/bootstrap.css">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="../frontend/styles/main.css">
+    <!-- data aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="page-dashboard">
+        <div class="d-flex" id="wrapper" data-aos="fade-right">
+            <!-- 1. Sidebar -->
+            <div class="border-right sidebar-dashboard" id="sidebar-wrapper">
+                <!-- Gambar/Logo Sidebar -->
+                <div class="sidebar-heading text-center">
+                    <a href="../indexAuthUser.html">
+                        <img src="../frontend/images/dashboard/dashboard_ic.svg" alt="" class="my-4">
+                    </a>
+                </div>
+                <!-- Menu Sidebar -->
+                <div class="list-group list-group-flush">
+                    <a href="../pimpinan/dashboard.html" class="list-group-item list-group-item-action active">
+                        Dashboard
+                    </a>
+                    <a href="../pimpinan/dashboardPengajuan.html" class="list-group-item list-group-item-action">
+                        Pengajuan Izin Masuk
+                    </a>
+                    <a href="../pimpinan/dashboardPembayaran.html" class="list-group-item list-group-item-action">
+                        Pembayaran Retribusi
+                    </a>
+                    <a href="../pimpinan/dashboardSuratIzinMasuk.html" class="list-group-item list-group-item-action">
+                        Surat Izin Masuk
+                    </a>
+                    <a href="../pimpinan/dashboardPengajuanBulanan.html" class="list-group-item list-group-item-action">
+                        Pengajuan Izin Bulanan
+                    </a>
+                    <a href="../pimpinan/dashboarMasukan.html" class="list-group-item list-group-item-action">
+                        Form Kepuasan & Kekurangan
+                    </a>
+                    <a href="../pimpinan/dashboarKeluarMasukPengunjung.html" class="list-group-item list-group-item-action">
+                        Data Keluar Masuk Pengunjung
+                    </a>
+                    <a href="../pimpinan/dashboarSetting.html" class="list-group-item list-group-item-action">
+                        Data Keluar Masuk Pengunjung
+                    </a>
+                    <a href="../index.html" class="list-group-item list-group-item-action mt-5">
+                        Keluar
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2. Dashboard Page -->
+            <div id="page-content-wrapper">
+                <!-- Navigasi -->
+                <nav class="navbar navbar-expand-lg navbar-light navbar-conservation-dashboard fixed-top" data-aos="fade-down">
+                    <div class="container-fluid">
+                        <button class="btn btn-secondary d-md-none mr-auto mr-2" id="menu-toggle">
+                            &laquo; Menu
+                        </button>
+                        <!-- Navbar Humberger -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Menu-menu -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <!-- Profile Picture & Notif: Desktop -->
+                            <ul class="navbar-nav d-none d-lg-flex ml-auto">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                        <img src="../frontend/images/ic_profile.png" alt="" class="rounded-circle mr-2 profile-picture">
+                                        Hi, Erli
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="../indexAuthUser.html" class="dropdown-item">
+                                            Halaman Utama
+                                        </a>
+                                        <a href="dashboardSetting.html" class="dropdown-item">Pengaturan Akun</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="../index.html" class="dropdown-item">Logout</a>
+                                    </div>
+                                </li>
+                                <!-- Notif -->
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-inline-block mt-2">
+                                        <img src="../frontend/images/ic_notif.png" alt="" height="24">
+                                        <div class="notification">4</div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Profile Picture & Notif: Mobile Menu -->
+                            <ul class="navbar-nav d-block d-lg-none">
+                                <li class="nav-item">
+                                    <a href="../pemohon/dashboard.html" class="nav-link">
+                                        Hi, Karlina Putri
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-inline-block">
+                                        Notifikasi
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Content -->
+                <div class="section-content section-dashboard section-dashboard-home" data-aos="fade-up">
+                    <div class="container-fluid">
+                        <!-- 1. Heading -->
+                        <div class="dashboard-heading">
+                            <h2 class="dashboard-title">Dashboard</h2>
+                            <p class="dashboard-subtitle">
+                                Selamat Datang di Halaman Dashboard Super Admin
+                            </p>
+                        </div>
+                        <div class="dashboard-content">
+                            <!-- 2. Card Pengajuan Izin Masuk Kawasan -->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <div class="card-body">
+                                            <div class="dashboard-card-title">
+                                                Jumlah Pengajaun Izin Masuk
+                                            </div>
+                                            <div class="dashboard-card-subtitle">
+                                                20
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <div class="card-body">
+                                            <div class="dashboard-card-title">
+                                                Pengajuan: Belum Diproses
+                                            </div>
+                                            <div class="dashboard-card-subtitle">
+                                                10
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <div class="card-body">
+                                            <div class="dashboard-card-title">
+                                                Pengajuan: Disetujui
+                                            </div>
+                                            <div class="dashboard-card-subtitle">
+                                                7
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <div class="card-body">
+                                            <div class="dashboard-card-title">
+                                                Pengajuan: Ditolak
+                                            </div>
+                                            <div class="dashboard-card-subtitle">
+                                                3
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <div class="card-body">
+                                            <div class="dashboard-card-title">
+                                                Pengajuan: Pariwisata
+                                            </div>
+                                            <div class="dashboard-card-subtitle">
+                                                1
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <div class="card-body">
+                                            <div class="dashboard-card-title">
+                                                Pengajuan: Penelitian
+                                            </div>
+                                            <div class="dashboard-card-subtitle">
+                                                2
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-2">
+                                        <div class="card-body">
+                                            <div class="dashboard-card-title">
+                                                Pengajuan: Pendidikan
+                                            </div>
+                                            <div class="dashboard-card-subtitle">
+                                                4
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3. Card Chart Pengajuan Izin Masuk -->
+                            <div class="row mt-3">
+                                <div class="col-12 mt-2">
+                                    <h5 class="mb-3">
+                                        Bagan Pengajuan Izin Masuk Kawasan Konservasi
+                                    </h5>
+                                    <!-- Bagan -->
+                                </div>
+                            </div>
+                            
+                            <!-- 4. Recent Pengajuan Izin Masuk Kawasan -->
+                            <div class="row mt-3">
+                                <div class="col-12 mt-2">
+                                    <h5 class="mb-3">
+                                        Pengajuan Izin Masuk Kawasan
+                                    </h5>
+                                    <!-- 4.1 Recent 1 -->
+                                    <a href="#" class="card card-list d-block">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                    <img src="../frontend/images/dashboard/image-pengajaun1.png" class="img-card-conservation">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    KKPD Pulau Randayan
+                                                </div>
+                                                <div class="col-md-2">
+                                                    12 Januari, 2020
+                                                </div>
+                                                <div class="col-md-2">
+                                                    Pariwisata
+                                                </div>
+                                                <div class="col-md-3">
+                                                    Adrian Mulyawan
+                                                </div>
+                                                <div class="col-md-1 d-none d-md-block">
+                                                    <img src="../frontend/images/dashboard/ic_arrow.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- 4.1 Recent 2 -->
+                                    <a href="#" class="card card-list d-block">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                    <img src="../frontend/images/dashboard/image-pengajaun2.png" class="img-card-conservation">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    KKPD Paloh
+                                                </div>
+                                                <div class="col-md-2">
+                                                    06 Januari, 2020
+                                                </div>
+                                                <div class="col-md-2">
+                                                    Penelitian
+                                                </div>
+                                                <div class="col-md-3">
+                                                    Kevin Jordan
+                                                </div>
+                                                <div class="col-md-1 d-none d-md-block">
+                                                    <img src="../frontend/images/dashboard/ic_arrow.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- 4.1 Recent 3 -->
+                                    <a href="#" class="card card-list d-block">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                    <img src="../frontend/images/dashboard/image-pengajaun1.png" class="img-card-conservation">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    KKPD Kendawangan
+                                                </div>
+                                                <div class="col-md-2">
+                                                    01 Januari, 2020
+                                                </div>
+                                                <div class="col-md-2">
+                                                    Pendidikan
+                                                </div>
+                                                <div class="col-md-3">
+                                                    Muh Hakaman Athhar
+                                                </div>
+                                                <div class="col-md-1 d-none d-md-block">
+                                                    <img src="../frontend/images/dashboard/ic_arrow.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- 5. Recent Pembayaran Retribusi -->
+                            <div class="row mt-3">
+                                <div class="col-12 mt-2">
+                                    <h5 class="mb-3">
+                                        Pembayaran Retribusi Izin Masuk Kawasan Konservasi
+                                    </h5>
+                                    <!-- 5.1 Recent 1 -->
+                                    <a href="#" class="card card-list d-block">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                    <img src="../frontend/images/dashboard/image-pengajaun1.png" class="img-card-conservation">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    KKPD Pulau Randayan
+                                                </div>
+                                                <div class="col-md-3">
+                                                    Muhammad Adrian Mulyawan
+                                                </div>
+                                                <div class="col-md-3">
+                                                    Rp 150.000,00
+                                                </div>
+                                                <div class="col-md-1 d-none d-md-block">
+                                                    <img src="../frontend/images/dashboard/ic_arrow.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- 5.1 Recent 2 -->
+                                    <a href="#" class="card card-list d-block">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                    <img src="../frontend/images/dashboard/image-pengajaun2.png" class="img-card-conservation">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    KKPD Paloh
+                                                </div>
+                                                <div class="col-md-3">
+                                                    Anita Rahayu
+                                                </div>
+                                                <div class="col-md-3">
+                                                    Rp 250.000,00
+                                                </div>
+                                                <div class="col-md-1 d-none d-md-block">
+                                                    <img src="../frontend/images/dashboard/ic_arrow.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!-- 5.1 Recent 3 -->
+                                    <a href="#" class="card card-list d-block">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                    <img src="../frontend/images/dashboard/image-pengajaun1.png" class="img-card-conservation">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    KKPD Kubu Raya
+                                                </div>
+                                                <div class="col-md-3">
+                                                    Anastasya Kosasih
+                                                </div>
+                                                <div class="col-md-3">
+                                                    Rp 100.000,00
+                                                </div>
+                                                <div class="col-md-1 d-none d-md-block">
+                                                    <img src="../frontend/images/dashboard/ic_arrow.svg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../frontend/libraries/jquery/jquery-3.6.0.js"></script>
+    <script src="../frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
+    <script src="../frontend/libraries/retina/retina.min.js"></script>
+    <script src="../frontend/scripts/hideSidebar.js"></script>
+</body>
+</html>
