@@ -12667,6 +12667,31 @@ header .btn-get-started:hover {
   font-weight: 600;
 }
 
+.dashboard-content .input-transaction-code input {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.dashboard-content .input-transaction-code .input-group-append button {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.dashboard-content .btn-search {
+  background-color: #FF9E53;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  float: right;
+}
+
+.dashboard-content .btn-search:hover {
+  background-color: #FFAA69;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .dashboard-content .card {
   background-color: #FEFEFE;
   -webkit-box-shadow: 8px 4px 15px #F1F1F8;

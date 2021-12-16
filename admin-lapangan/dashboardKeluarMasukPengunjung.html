@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALAM Konservasi</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../frontend/libraries/bootstrap/css/bootstrap.css">
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0249022da9.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../frontend/styles/main.css">
+    <!-- data aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="page-dashboard">
+        <div class="d-flex" id="wrapper" data-aos="fade-right">
+            <!-- 1. Sidebar -->
+            <div class="border-right sidebar-dashboard" id="sidebar-wrapper">
+                <!-- Gambar/Logo Sidebar -->
+                <div class="sidebar-heading text-center">
+                    <a href="../indexAuthUser.html">
+                        <img src="../frontend/images/dashboard/dashboard_ic.svg" alt="" class="my-4">
+                    </a>
+                </div>
+                <!-- Menu Sidebar -->
+                <div class="list-group list-group-flush">
+                    <a href="../pimpinan/dashboard.html" class="list-group-item list-group-item-action">
+                        Dashboard
+                    </a>
+                    <a href="../pimpinan/dashboardPengajuan.html" class="list-group-item list-group-item-action">
+                        Pengajuan Izin Masuk
+                    </a>
+                    <a href="../pimpinan/dashboardPembayaran.html" class="list-group-item list-group-item-action">
+                        Pembayaran Retribusi
+                    </a>
+                    <a href="../pimpinan/dashboardSuratIzinMasuk.html" class="list-group-item list-group-item-action">
+                        Surat Izin Masuk
+                    </a>
+                    <a href="../pimpinan/dashboardPengajuanBulanan.html" class="list-group-item list-group-item-action">
+                        Rekapan Pengajuan Bulanan
+                    </a>
+                    <a href="../pimpinan/dashboardMasukan.html" class="list-group-item list-group-item-action">
+                        Form Kepuasan & Kekurangan
+                    </a>
+                    <a href="../pimpinan/dashboardKeluarMasukPengunjung.html" class="list-group-item list-group-item-action active">
+                        Data Keluar Masuk Pengunjung
+                    </a>
+                    <a href="../pimpinan/dashboardSetting.html" class="list-group-item list-group-item-action">
+                        Pengaturan Akun
+                    </a>
+                    <a href="../index.html" class="list-group-item list-group-item-action mt-5">
+                        Keluar
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2. Dashboard Page -->
+            <div id="page-content-wrapper">
+                <!-- Navigasi -->
+                <nav class="navbar navbar-expand-lg navbar-light navbar-conservation-dashboard fixed-top" data-aos="fade-down">
+                    <div class="container-fluid">
+                        <button class="btn btn-secondary d-md-none mr-auto mr-2" id="menu-toggle">
+                            &laquo; Menu
+                        </button>
+                        <!-- Navbar Humberger -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Menu-menu -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <!-- Profile Picture & Notif: Desktop -->
+                            <ul class="navbar-nav d-none d-lg-flex ml-auto">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                        <img src="../frontend/images/ic_profile.png" alt="" class="rounded-circle mr-2 profile-picture">
+                                        Hi, Erli
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="../indexAuthUser.html" class="dropdown-item">
+                                            Halaman Utama
+                                        </a>
+                                        <a href="#" class="dropdown-item">Pengaturan Akun</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a href="../index.html" class="dropdown-item">Logout</a>
+                                    </div>
+                                </li>
+                                <!-- Notif -->
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-inline-block mt-2">
+                                        <img src="../frontend/images/ic_notif.png" alt="" height="24">
+                                        <div class="notification">4</div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Profile Picture & Notif: Mobile Menu -->
+                            <ul class="navbar-nav d-block d-lg-none">
+                                <li class="nav-item">
+                                    <a href="../super-admin/dashboard.html" class="nav-link">
+                                        Hi, Adrian
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link d-inline-block">
+                                        Notifikasi
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Content -->
+                <div class="section-content section-dashboard section-dashboard-home" data-aos="fade-up">
+                    <div class="container-fluid">
+                        <!-- 1. Heading -->
+                        <div class="dashboard-heading">
+                            <h2 class="dashboard-title">Data Keluar Masuk Pengunjung</h2>
+                            <p class="dashboard-subtitle">
+                                Daftar Pengunjung Yang Masuk dan Keluar Kawasan Konservasi
+                            </p>
+                        </div>
+                        <div class="dashboard-content">
+                            <!-- 2. Table Data Kawasan -->
+                            <div class="card card-conservation">
+                                <div class="row">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered" width="100%" cellspacing="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center">No</th>
+                                                        <th class="text-center">Kode Transaksi</th>
+                                                        <th class="text-center">Nama Pengunjung</th>
+                                                        <th class="text-center">Lokasi Tujuan</th>
+                                                        <th class="text-center">Tujuan</th>
+                                                        <th class="text-center">Aksi</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center">1</td>
+                                                        <td class="text-center">SALAM-89120</td>
+                                                        <td class="text-center">Rachel Venya</td>
+                                                        <td class="text-center">KKPD Pulau Randayan</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
+                                                            </button>
+                                                            <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <h5 class="modal-title" id="detailKunjunganLabel">
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89120
+                                                                      </h5>
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                      <table class="table table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
+                                                                                <td>
+                                                                                    Rachel Venya
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
+                                                                                <td>
+                                                                                    KKPD Pulau Randayan
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Ahmad Nurfauzi</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                      <button type="button" class="btn btn-sim-kawasan" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">2</td>
+                                                        <td class="text-center">SALAM-89119</td>
+                                                        <td class="text-center">Muhammad Hakaman Athhar</td>
+                                                        <td class="text-center">KKPD Pulau Randayan</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
+                                                            </button>
+                                                            <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <h5 class="modal-title" id="detailKunjunganLabel">
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89120
+                                                                      </h5>
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                      <table class="table table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
+                                                                                <td>
+                                                                                    Muhammad Hakaman Athhar
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
+                                                                                <td>
+                                                                                    KKPD Pulau Randayan
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Ahmad Nurfauzi</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                      <button type="button" class="btn btn-sim-kawasan" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">3</td>
+                                                        <td class="text-center">SALAM-89118</td>
+                                                        <td class="text-center">Revianto</td>
+                                                        <td class="text-center">KKPD Paloh</td>
+                                                        <td class="text-center">Penelitian</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
+                                                            </button>
+                                                            <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <h5 class="modal-title" id="detailKunjunganLabel">
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89118
+                                                                      </h5>
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                      <table class="table table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
+                                                                                <td>
+                                                                                    Revianto
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
+                                                                                <td>
+                                                                                    KKPD Paloh
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Penelitian</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Abdul Wadir</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                      <button type="button" class="btn btn-sim-kawasan" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">4</td>
+                                                        <td class="text-center">SALAM-89117</td>
+                                                        <td class="text-center">Badrul</td>
+                                                        <td class="text-center">KKPD Paloh</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
+                                                            </button>
+                                                            <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <h5 class="modal-title" id="detailKunjunganLabel">
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89117
+                                                                      </h5>
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                      <table class="table table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
+                                                                                <td>
+                                                                                    Badrul
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
+                                                                                <td>
+                                                                                    KKPD Pulau Randayan
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Abdul Wadir</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                      <button type="button" class="btn btn-sim-kawasan" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">5</td>
+                                                        <td class="text-center">SALAM-89116</td>
+                                                        <td class="text-center">Maman Abdurahman</td>
+                                                        <td class="text-center">KKPD Kubu Raya</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
+                                                            </button>
+                                                            <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <h5 class="modal-title" id="detailKunjunganLabel">
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89116
+                                                                      </h5>
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                      <table class="table table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
+                                                                                <td>
+                                                                                    Maman Abdurahman
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
+                                                                                <td>
+                                                                                    KKPD Kubu Raya
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Sutrisno</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                      <button type="button" class="btn btn-sim-kawasan" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">6</td>
+                                                        <td class="text-center">SALAM-89110</td>
+                                                        <td class="text-center">Adrian Mulyawan</td>
+                                                        <td class="text-center">KKPD Kubu Raya</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
+                                                            </button>
+                                                            <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <h5 class="modal-title" id="detailKunjunganLabel">
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89110
+                                                                      </h5>
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                      <table class="table table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
+                                                                                <td>
+                                                                                    Adrian Mulyawan
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
+                                                                                <td>
+                                                                                    KKPD Kubu Raya
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Sutrisno</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                      <button type="button" class="btn btn-sim-kawasan" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">7</td>
+                                                        <td class="text-center">SALAM-89109</td>
+                                                        <td class="text-center">Dhafia Raisha Kamila</td>
+                                                        <td class="text-center">KKPD Kendawangan</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
+                                                            </button>
+                                                            <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <h5 class="modal-title" id="detailKunjunganLabel">
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89109
+                                                                      </h5>
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                      <table class="table table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
+                                                                                <td>
+                                                                                    Dhafia Raisha Kamila
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
+                                                                                <td>
+                                                                                    KKPD Kendawangan
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Suwandi</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                      <button type="button" class="btn btn-sim-kawasan" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">8</td>
+                                                        <td class="text-center">SALAM-89108</td>
+                                                        <td class="text-center">Wawan</td>
+                                                        <td class="text-center">KKPD Kendawangan</td>
+                                                        <td class="text-center">Penelitian</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
+                                                            </button>
+                                                            <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <h5 class="modal-title" id="detailKunjunganLabel">
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89108
+                                                                      </h5>
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                      <table class="table table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
+                                                                                <td>
+                                                                                    Wawan
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
+                                                                                <td>
+                                                                                    KKPD Kendawangan
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Penelitian</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Suwandi</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                      <button type="button" class="btn btn-sim-kawasan" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">9</td>
+                                                        <td class="text-center">SALAM-89107</td>
+                                                        <td class="text-center">Gusti</td>
+                                                        <td class="text-center">KKPD Kayong Utara</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
+                                                            </button>
+                                                            <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <h5 class="modal-title" id="detailKunjunganLabel">
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89107
+                                                                      </h5>
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                      <table class="table table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
+                                                                                <td>
+                                                                                    Gusti
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
+                                                                                <td>
+                                                                                    KKPD Kayong Utara
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Mahmudin</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                      <button type="button" class="btn btn-sim-kawasan" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center">10</td>
+                                                        <td class="text-center">SALAM-89106</td>
+                                                        <td class="text-center">Chiko Jeriko</td>
+                                                        <td class="text-center">KKPD Kayong Utara</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
+                                                            </button>
+                                                            <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
+                                                                <div class="modal-dialog">
+                                                                  <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                      <h5 class="modal-title" id="detailKunjunganLabel">
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89106
+                                                                      </h5>
+                                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                      <table class="table table-bordered">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
+                                                                                <td>
+                                                                                   Chiko Jeriko
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
+                                                                                <td>
+                                                                                    KKPD Kayong Utara
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Mahmudin</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                      </table>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                      <button type="button" class="btn btn-sim-kawasan" data-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Pagination -->
+                                <div class="row justify-content-end mr-2">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../frontend/libraries/jquery/jquery-3.6.0.js"></script>
+    <script src="../frontend/libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
+    <script src="../frontend/libraries/retina/retina.min.js"></script>
+    <script src="../frontend/scripts/hideSidebar.js"></script>
+</body>
+</html>
