@@ -46,10 +46,10 @@
                     <a href="../pimpinan/dashboardPengajuanBulanan.html" class="list-group-item list-group-item-action">
                         Rekapan Pengajuan Bulanan
                     </a>
-                    <a href="../pimpinan/dashboardMasukan.html" class="list-group-item list-group-item-action active">
+                    <a href="../pimpinan/dashboardMasukan.html" class="list-group-item list-group-item-action">
                         Form Kepuasan & Kekurangan
                     </a>
-                    <a href="../pimpinan/dashboardKeluarMasukPengunjung.html" class="list-group-item list-group-item-action">
+                    <a href="../pimpinan/dashboardKeluarMasukPengunjung.html" class="list-group-item list-group-item-action active">
                         Data Keluar Masuk Pengunjung
                     </a>
                     <a href="../pimpinan/dashboardSetting.html" class="list-group-item list-group-item-action">
@@ -122,9 +122,9 @@
                     <div class="container-fluid">
                         <!-- 1. Heading -->
                         <div class="dashboard-heading">
-                            <h2 class="dashboard-title">Formulir Kepuasaan & Kekurangan Layanan / Sistem</h2>
+                            <h2 class="dashboard-title">Data Keluar Masuk Pengunjung</h2>
                             <p class="dashboard-subtitle">
-                                Daftar Kritik, Saran Dari Pengunjung Sistem atau Kawasan Konservasi
+                                Daftar Pengunjung Yang Masuk dan Keluar Kawasan Konservasi
                             </p>
                         </div>
                         <div class="dashboard-content">
@@ -137,30 +137,31 @@
                                                 <thead>
                                                     <tr>
                                                         <th class="text-center">No</th>
-                                                        <th class="text-center">Nama</th>
-                                                        <th class="text-center">Judul Pesan</th>
-                                                        <th class="text-center">Isi Pesan</th>
+                                                        <th class="text-center">Kode Transaksi</th>
+                                                        <th class="text-center">Nama Pengunjung</th>
+                                                        <th class="text-center">Lokasi Tujuan</th>
+                                                        <th class="text-center">Tujuan</th>
                                                         <th class="text-center">Aksi</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
                                                         <td class="text-center">1</td>
+                                                        <td class="text-center">SALAM-89120</td>
                                                         <td class="text-center">Rachel Venya</td>
-                                                        <td>Penjaga Kawasan Tidak Ramah</td>
-                                                        <td>
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis neque odio quo repellat obcaecati.
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-4" data-toggle="modal" data-target="#detailKunjungan">
-                                                                Detail
+                                                        <td class="text-center">KKPD Pulau Randayan</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
                                                             </button>
                                                             <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                   <div class="modal-content">
                                                                     <div class="modal-header">
                                                                       <h5 class="modal-title" id="detailKunjunganLabel">
-                                                                        Detail Formulir: Rachel Venya
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89120
                                                                       </h5>
                                                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                         <span aria-hidden="true">&times;</span>
@@ -170,28 +171,44 @@
                                                                       <table class="table table-bordered">
                                                                         <tbody>
                                                                             <tr>
-                                                                                <th>Nama</th>
-                                                                                <td>Rachel Venya</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Email</th>
-                                                                                <td>rachelsisopan@gmail.com</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>No Handphone</th>
-                                                                                <td>081240000000</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Judul Pesan</th>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
                                                                                 <td>
-                                                                                    Penjaga Kawasan Tidak Ramah
+                                                                                    Rachel Venya
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Detail Keluhan / Isi Pesan</th>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
                                                                                 <td>
-                                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit hic optio animi, odit numquam earum id dolorum incidunt, porro, itaque dolor nobis. Provident, quibusdam? Exercitationem sed esse voluptatum accusamus. Enim dolores commodi harum voluptas ad repudiandae laboriosam molestias? Laboriosam laudantium voluptate hic accusamus quibusdam magnam maiores vitae, reprehenderit molestiae accusantium.
+                                                                                    KKPD Pulau Randayan
                                                                                 </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Ahmad Nurfauzi</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
                                                                             </tr>
                                                                         </tbody>
                                                                       </table>
@@ -206,21 +223,21 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="text-center">2</td>
+                                                        <td class="text-center">SALAM-89119</td>
                                                         <td class="text-center">Muhammad Hakaman Athhar</td>
-                                                        <td>Penjaga Kawasan Tidak Ramah</td>
-                                                        <td>
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis neque odio quo repellat obcaecati.
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-4" data-toggle="modal" data-target="#detailKunjungan">
-                                                                Detail
+                                                        <td class="text-center">KKPD Pulau Randayan</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
                                                             </button>
                                                             <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                   <div class="modal-content">
                                                                     <div class="modal-header">
                                                                       <h5 class="modal-title" id="detailKunjunganLabel">
-                                                                        Detail Formulir: Rachel Venya
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89120
                                                                       </h5>
                                                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                         <span aria-hidden="true">&times;</span>
@@ -230,28 +247,44 @@
                                                                       <table class="table table-bordered">
                                                                         <tbody>
                                                                             <tr>
-                                                                                <th>Nama</th>
-                                                                                <td>Rachel Venya</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Email</th>
-                                                                                <td>rachelsisopan@gmail.com</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>No Handphone</th>
-                                                                                <td>081240000000</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Judul Pesan</th>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
                                                                                 <td>
-                                                                                    Penjaga Kawasan Tidak Ramah
+                                                                                    Muhammad Hakaman Athhar
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Detail Keluhan / Isi Pesan</th>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
                                                                                 <td>
-                                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit hic optio animi, odit numquam earum id dolorum incidunt, porro, itaque dolor nobis. Provident, quibusdam? Exercitationem sed esse voluptatum accusamus. Enim dolores commodi harum voluptas ad repudiandae laboriosam molestias? Laboriosam laudantium voluptate hic accusamus quibusdam magnam maiores vitae, reprehenderit molestiae accusantium.
+                                                                                    KKPD Pulau Randayan
                                                                                 </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Ahmad Nurfauzi</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
                                                                             </tr>
                                                                         </tbody>
                                                                       </table>
@@ -266,21 +299,21 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="text-center">3</td>
+                                                        <td class="text-center">SALAM-89118</td>
                                                         <td class="text-center">Revianto</td>
-                                                        <td>Penjaga Kawasan Tidak Ramah</td>
-                                                        <td>
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis neque odio quo repellat obcaecati.
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-4" data-toggle="modal" data-target="#detailKunjungan">
-                                                                Detail
+                                                        <td class="text-center">KKPD Paloh</td>
+                                                        <td class="text-center">Penelitian</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
                                                             </button>
                                                             <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                   <div class="modal-content">
                                                                     <div class="modal-header">
                                                                       <h5 class="modal-title" id="detailKunjunganLabel">
-                                                                        Detail Formulir: Rachel Venya
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89118
                                                                       </h5>
                                                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                         <span aria-hidden="true">&times;</span>
@@ -290,28 +323,44 @@
                                                                       <table class="table table-bordered">
                                                                         <tbody>
                                                                             <tr>
-                                                                                <th>Nama</th>
-                                                                                <td>Rachel Venya</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Email</th>
-                                                                                <td>rachelsisopan@gmail.com</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>No Handphone</th>
-                                                                                <td>081240000000</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Judul Pesan</th>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
                                                                                 <td>
-                                                                                    Penjaga Kawasan Tidak Ramah
+                                                                                    Revianto
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Detail Keluhan / Isi Pesan</th>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
                                                                                 <td>
-                                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit hic optio animi, odit numquam earum id dolorum incidunt, porro, itaque dolor nobis. Provident, quibusdam? Exercitationem sed esse voluptatum accusamus. Enim dolores commodi harum voluptas ad repudiandae laboriosam molestias? Laboriosam laudantium voluptate hic accusamus quibusdam magnam maiores vitae, reprehenderit molestiae accusantium.
+                                                                                    KKPD Paloh
                                                                                 </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Penelitian</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Abdul Wadir</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
                                                                             </tr>
                                                                         </tbody>
                                                                       </table>
@@ -326,21 +375,21 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="text-center">4</td>
+                                                        <td class="text-center">SALAM-89117</td>
                                                         <td class="text-center">Badrul</td>
-                                                        <td>Penjaga Kawasan Tidak Ramah</td>
-                                                        <td>
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis neque odio quo repellat obcaecati.
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-4" data-toggle="modal" data-target="#detailKunjungan">
-                                                                Detail
+                                                        <td class="text-center">KKPD Paloh</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
                                                             </button>
                                                             <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                   <div class="modal-content">
                                                                     <div class="modal-header">
                                                                       <h5 class="modal-title" id="detailKunjunganLabel">
-                                                                        Detail Formulir: Rachel Venya
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89117
                                                                       </h5>
                                                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                         <span aria-hidden="true">&times;</span>
@@ -350,28 +399,44 @@
                                                                       <table class="table table-bordered">
                                                                         <tbody>
                                                                             <tr>
-                                                                                <th>Nama</th>
-                                                                                <td>Rachel Venya</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Email</th>
-                                                                                <td>rachelsisopan@gmail.com</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>No Handphone</th>
-                                                                                <td>081240000000</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Judul Pesan</th>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
                                                                                 <td>
-                                                                                    Penjaga Kawasan Tidak Ramah
+                                                                                    Badrul
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Detail Keluhan / Isi Pesan</th>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
                                                                                 <td>
-                                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit hic optio animi, odit numquam earum id dolorum incidunt, porro, itaque dolor nobis. Provident, quibusdam? Exercitationem sed esse voluptatum accusamus. Enim dolores commodi harum voluptas ad repudiandae laboriosam molestias? Laboriosam laudantium voluptate hic accusamus quibusdam magnam maiores vitae, reprehenderit molestiae accusantium.
+                                                                                    KKPD Pulau Randayan
                                                                                 </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Abdul Wadir</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
                                                                             </tr>
                                                                         </tbody>
                                                                       </table>
@@ -386,21 +451,21 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="text-center">5</td>
+                                                        <td class="text-center">SALAM-89116</td>
                                                         <td class="text-center">Maman Abdurahman</td>
-                                                        <td>Penjaga Kawasan Tidak Ramah</td>
-                                                        <td>
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis neque odio quo repellat obcaecati.
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-4" data-toggle="modal" data-target="#detailKunjungan">
-                                                                Detail
+                                                        <td class="text-center">KKPD Kubu Raya</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
                                                             </button>
                                                             <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                   <div class="modal-content">
                                                                     <div class="modal-header">
                                                                       <h5 class="modal-title" id="detailKunjunganLabel">
-                                                                        Detail Formulir: Rachel Venya
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89116
                                                                       </h5>
                                                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                         <span aria-hidden="true">&times;</span>
@@ -410,28 +475,44 @@
                                                                       <table class="table table-bordered">
                                                                         <tbody>
                                                                             <tr>
-                                                                                <th>Nama</th>
-                                                                                <td>Rachel Venya</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Email</th>
-                                                                                <td>rachelsisopan@gmail.com</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>No Handphone</th>
-                                                                                <td>081240000000</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Judul Pesan</th>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
                                                                                 <td>
-                                                                                    Penjaga Kawasan Tidak Ramah
+                                                                                    Maman Abdurahman
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Detail Keluhan / Isi Pesan</th>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
                                                                                 <td>
-                                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit hic optio animi, odit numquam earum id dolorum incidunt, porro, itaque dolor nobis. Provident, quibusdam? Exercitationem sed esse voluptatum accusamus. Enim dolores commodi harum voluptas ad repudiandae laboriosam molestias? Laboriosam laudantium voluptate hic accusamus quibusdam magnam maiores vitae, reprehenderit molestiae accusantium.
+                                                                                    KKPD Kubu Raya
                                                                                 </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Sutrisno</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
                                                                             </tr>
                                                                         </tbody>
                                                                       </table>
@@ -446,21 +527,21 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="text-center">6</td>
+                                                        <td class="text-center">SALAM-89110</td>
                                                         <td class="text-center">Adrian Mulyawan</td>
-                                                        <td>Penjaga Kawasan Tidak Ramah</td>
-                                                        <td>
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis neque odio quo repellat obcaecati.
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-4" data-toggle="modal" data-target="#detailKunjungan">
-                                                                Detail
+                                                        <td class="text-center">KKPD Kubu Raya</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
                                                             </button>
                                                             <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                   <div class="modal-content">
                                                                     <div class="modal-header">
                                                                       <h5 class="modal-title" id="detailKunjunganLabel">
-                                                                        Detail Formulir: Rachel Venya
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89110
                                                                       </h5>
                                                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                         <span aria-hidden="true">&times;</span>
@@ -470,28 +551,44 @@
                                                                       <table class="table table-bordered">
                                                                         <tbody>
                                                                             <tr>
-                                                                                <th>Nama</th>
-                                                                                <td>Rachel Venya</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Email</th>
-                                                                                <td>rachelsisopan@gmail.com</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>No Handphone</th>
-                                                                                <td>081240000000</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Judul Pesan</th>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
                                                                                 <td>
-                                                                                    Penjaga Kawasan Tidak Ramah
+                                                                                    Adrian Mulyawan
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Detail Keluhan / Isi Pesan</th>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
                                                                                 <td>
-                                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit hic optio animi, odit numquam earum id dolorum incidunt, porro, itaque dolor nobis. Provident, quibusdam? Exercitationem sed esse voluptatum accusamus. Enim dolores commodi harum voluptas ad repudiandae laboriosam molestias? Laboriosam laudantium voluptate hic accusamus quibusdam magnam maiores vitae, reprehenderit molestiae accusantium.
+                                                                                    KKPD Kubu Raya
                                                                                 </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Sutrisno</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
                                                                             </tr>
                                                                         </tbody>
                                                                       </table>
@@ -506,21 +603,21 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="text-center">7</td>
+                                                        <td class="text-center">SALAM-89109</td>
                                                         <td class="text-center">Dhafia Raisha Kamila</td>
-                                                        <td>Penjaga Kawasan Tidak Ramah</td>
-                                                        <td>
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis neque odio quo repellat obcaecati.
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-4" data-toggle="modal" data-target="#detailKunjungan">
-                                                                Detail
+                                                        <td class="text-center">KKPD Kendawangan</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
                                                             </button>
                                                             <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                   <div class="modal-content">
                                                                     <div class="modal-header">
                                                                       <h5 class="modal-title" id="detailKunjunganLabel">
-                                                                        Detail Formulir: Rachel Venya
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89109
                                                                       </h5>
                                                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                         <span aria-hidden="true">&times;</span>
@@ -530,28 +627,44 @@
                                                                       <table class="table table-bordered">
                                                                         <tbody>
                                                                             <tr>
-                                                                                <th>Nama</th>
-                                                                                <td>Rachel Venya</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Email</th>
-                                                                                <td>rachelsisopan@gmail.com</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>No Handphone</th>
-                                                                                <td>081240000000</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Judul Pesan</th>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
                                                                                 <td>
-                                                                                    Penjaga Kawasan Tidak Ramah
+                                                                                    Dhafia Raisha Kamila
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Detail Keluhan / Isi Pesan</th>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
                                                                                 <td>
-                                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit hic optio animi, odit numquam earum id dolorum incidunt, porro, itaque dolor nobis. Provident, quibusdam? Exercitationem sed esse voluptatum accusamus. Enim dolores commodi harum voluptas ad repudiandae laboriosam molestias? Laboriosam laudantium voluptate hic accusamus quibusdam magnam maiores vitae, reprehenderit molestiae accusantium.
+                                                                                    KKPD Kendawangan
                                                                                 </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Suwandi</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
                                                                             </tr>
                                                                         </tbody>
                                                                       </table>
@@ -566,21 +679,21 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="text-center">8</td>
+                                                        <td class="text-center">SALAM-89108</td>
                                                         <td class="text-center">Wawan</td>
-                                                        <td>Penjaga Kawasan Tidak Ramah</td>
-                                                        <td>
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis neque odio quo repellat obcaecati.
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-4" data-toggle="modal" data-target="#detailKunjungan">
-                                                                Detail
+                                                        <td class="text-center">KKPD Kendawangan</td>
+                                                        <td class="text-center">Penelitian</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
                                                             </button>
                                                             <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                   <div class="modal-content">
                                                                     <div class="modal-header">
                                                                       <h5 class="modal-title" id="detailKunjunganLabel">
-                                                                        Detail Formulir: Rachel Venya
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89108
                                                                       </h5>
                                                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                         <span aria-hidden="true">&times;</span>
@@ -590,28 +703,44 @@
                                                                       <table class="table table-bordered">
                                                                         <tbody>
                                                                             <tr>
-                                                                                <th>Nama</th>
-                                                                                <td>Rachel Venya</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Email</th>
-                                                                                <td>rachelsisopan@gmail.com</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>No Handphone</th>
-                                                                                <td>081240000000</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Judul Pesan</th>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
                                                                                 <td>
-                                                                                    Penjaga Kawasan Tidak Ramah
+                                                                                    Wawan
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Detail Keluhan / Isi Pesan</th>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
                                                                                 <td>
-                                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit hic optio animi, odit numquam earum id dolorum incidunt, porro, itaque dolor nobis. Provident, quibusdam? Exercitationem sed esse voluptatum accusamus. Enim dolores commodi harum voluptas ad repudiandae laboriosam molestias? Laboriosam laudantium voluptate hic accusamus quibusdam magnam maiores vitae, reprehenderit molestiae accusantium.
+                                                                                    KKPD Kendawangan
                                                                                 </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Penelitian</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Suwandi</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
                                                                             </tr>
                                                                         </tbody>
                                                                       </table>
@@ -626,21 +755,21 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="text-center">9</td>
+                                                        <td class="text-center">SALAM-89107</td>
                                                         <td class="text-center">Gusti</td>
-                                                        <td>Penjaga Kawasan Tidak Ramah</td>
-                                                        <td>
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis neque odio quo repellat obcaecati.
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-4" data-toggle="modal" data-target="#detailKunjungan">
-                                                                Detail
+                                                        <td class="text-center">KKPD Kayong Utara</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
                                                             </button>
                                                             <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                   <div class="modal-content">
                                                                     <div class="modal-header">
                                                                       <h5 class="modal-title" id="detailKunjunganLabel">
-                                                                        Detail Formulir: Rachel Venya
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89107
                                                                       </h5>
                                                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                         <span aria-hidden="true">&times;</span>
@@ -650,28 +779,44 @@
                                                                       <table class="table table-bordered">
                                                                         <tbody>
                                                                             <tr>
-                                                                                <th>Nama</th>
-                                                                                <td>Rachel Venya</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Email</th>
-                                                                                <td>rachelsisopan@gmail.com</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>No Handphone</th>
-                                                                                <td>081240000000</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Judul Pesan</th>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
                                                                                 <td>
-                                                                                    Penjaga Kawasan Tidak Ramah
+                                                                                    Gusti
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Detail Keluhan / Isi Pesan</th>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
                                                                                 <td>
-                                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit hic optio animi, odit numquam earum id dolorum incidunt, porro, itaque dolor nobis. Provident, quibusdam? Exercitationem sed esse voluptatum accusamus. Enim dolores commodi harum voluptas ad repudiandae laboriosam molestias? Laboriosam laudantium voluptate hic accusamus quibusdam magnam maiores vitae, reprehenderit molestiae accusantium.
+                                                                                    KKPD Kayong Utara
                                                                                 </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Mahmudin</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
                                                                             </tr>
                                                                         </tbody>
                                                                       </table>
@@ -686,21 +831,21 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="text-center">10</td>
+                                                        <td class="text-center">SALAM-89106</td>
                                                         <td class="text-center">Chiko Jeriko</td>
-                                                        <td>Penjaga Kawasan Tidak Ramah</td>
-                                                        <td>
-                                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis neque odio quo repellat obcaecati.
-                                                        </td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-4" data-toggle="modal" data-target="#detailKunjungan">
-                                                                Detail
+                                                        <td class="text-center">KKPD Kayong Utara</td>
+                                                        <td class="text-center">Pariwisata</td>
+                                                        <td class="text-center">
+                                                            <!-- <a href="../super-admin/dashboardDetailUnggahSurat.html" class="btn btn-sim-kawasan mt-auto px-4">Unduh</a> -->
+                                                            <button type="button" class="btn btn-sim-kawasan mt-auto px-3" data-toggle="modal" data-target="#detailKunjungan">
+                                                                Lihat Detail
                                                             </button>
                                                             <div class="modal fade" id="detailKunjungan" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="detailKunjunganLabel" aria-hidden="true">
                                                                 <div class="modal-dialog">
                                                                   <div class="modal-content">
                                                                     <div class="modal-header">
                                                                       <h5 class="modal-title" id="detailKunjunganLabel">
-                                                                        Detail Formulir: Rachel Venya
+                                                                        Detail Kunjungan Pengunjung: #SALAM-89106
                                                                       </h5>
                                                                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                         <span aria-hidden="true">&times;</span>
@@ -710,28 +855,44 @@
                                                                       <table class="table table-bordered">
                                                                         <tbody>
                                                                             <tr>
-                                                                                <th>Nama</th>
-                                                                                <td>Rachel Venya</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Email</th>
-                                                                                <td>rachelsisopan@gmail.com</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>No Handphone</th>
-                                                                                <td>081240000000</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <th>Judul Pesan</th>
+                                                                                <th>
+                                                                                    Nama Pengunjung
+                                                                                </th>
                                                                                 <td>
-                                                                                    Penjaga Kawasan Tidak Ramah
+                                                                                   Chiko Jeriko
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <th>Detail Keluhan / Isi Pesan</th>
+                                                                                <th>
+                                                                                    Kawasan Tujuan
+                                                                                </th>
                                                                                 <td>
-                                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit hic optio animi, odit numquam earum id dolorum incidunt, porro, itaque dolor nobis. Provident, quibusdam? Exercitationem sed esse voluptatum accusamus. Enim dolores commodi harum voluptas ad repudiandae laboriosam molestias? Laboriosam laudantium voluptate hic accusamus quibusdam magnam maiores vitae, reprehenderit molestiae accusantium.
+                                                                                    KKPD Kayong Utara
                                                                                 </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Tujuan Masuk Kawasan</th>
+                                                                                <td>Pariwisata</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Admin Lapangan</th>
+                                                                                <td>Mahmudin</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Masuk Kawasan</th>
+                                                                                <td>31 Desember 2021</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Rencana Keluar Kawasan</th>
+                                                                                <td>06 Januari 2022</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Masuk Kawasan</th>
+                                                                                <td>01 Januari 2022 | 08:00</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <th>Keluar Kawasan</th>
+                                                                                <td>05 Januari 2022 | 15:00</td>
                                                                             </tr>
                                                                         </tbody>
                                                                       </table>
