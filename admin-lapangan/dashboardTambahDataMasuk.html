@@ -7,6 +7,8 @@
     <title>SALAM Konservasi</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../frontend/libraries/bootstrap/css/bootstrap.css">
+    <!-- gijgo -->
+    <link rel="stylesheet" href="../frontend/libraries/gijgo/css/gijgo.css">
     <!-- Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,7 +115,7 @@
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item">
-                                           Kelola Keluar Masuk Pengunjung
+                                           Tambah Data Masuk Pengunjung
                                         </li>
                                         <li class="breadcrumb-item active" aria-current="page">
                                             Adrian Mulyawan
@@ -163,10 +165,10 @@
                                         </div>
                                         <div class="transaction-date-entry">
                                             <div class="transaction-title">
-                                                Tanggal Masuk Kawasan
+                                                Rencana Masuk Kawasan
                                             </div>
                                             <div class="transaction-subtitle">
-                                                01 Januari 2022
+                                                31 Desember 2021
                                             </div>
                                         </div>
                                     </div>
@@ -288,15 +290,11 @@
                                 <!-- 2.4 Tanggal Masuk -->
                                 <div class="row form-group data-approval">
                                     <h5>Tanggal Masuk Kawasan</h5>
-                                    <input class="form-control mt-2" id="disabledInput" type="text" name="tanggal-masuk" value="01-01-2022" disabled>
-                                </div>
-                                <!-- 2.5 Tanggal Keluar -->
-                                <div class="row form-group data-approval mt-2">
-                                    <h5>Tanggal Keluar Kawasan</h5>
-                                    <input class="form-control mt-2" id="disabledInput" type="text" name="tanggal-masuk" value="04-01-2022" disabled>
+                                    <input type="text" class="form-control datepicker" id="tanggal_masuk" name="tanggal_masuk" required placeholder="Tanggal Masuk Kawasan">
                                 </div>
                                 <div class="row justify-content-end mr-1 mt-4">
                                     <a href="../admin-lapangan/dashboardKelolaKunjungan.html" class="btn btn-primary py-2 mr-2">Tutup</a>
+                                    <button type="submit" class="btn btn-primary py-2">Simpan Data</button>
                                 </div>
                             </div>
                         </div>
@@ -312,6 +310,18 @@
     <script>
       AOS.init();
     </script>  
+    <script src="../frontend/libraries/gijgo/js/gijgo.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Gijgo
+            $('.datepicker').datepicker({
+                uiLibrary: 'bootstrap4',
+                icons: {
+                    rightIcon: '<img src="../frontend/images/calendar_icon.png" height="19">'
+                }
+            });
+        });
+    </script>
     <script src="../frontend/libraries/retina/retina.min.js"></script>
     <script src="../frontend/scripts/hideSidebar.js"></script>
 </body>
