@@ -12354,6 +12354,90 @@ div.section-success .btn-dashboard {
   background-color: #FFAA69;
 }
 
+body {
+  background-color: #F4F4F4;
+  font-family: 'Assistant', sans-serif;
+}
+
+.section-transaction-content {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.section-transaction-content .card {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.section-transaction-content .card .section-transaction-header h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #041B50;
+}
+
+.section-transaction-content .card .section-transaction-header p {
+  font-size: 20px;
+  color: #B1B1B1;
+}
+
+.section-transaction-content .card .section-transaction-total h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #041B50;
+}
+
+.section-transaction-content .card .section-transaction-total p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #041B50;
+}
+
+.section-transaction-content .card .bank .bank-item .description {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  float: left;
+}
+
+.section-transaction-content .card .bank .bank-item .description .agency-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #041B50;
+  margin-bottom: 0px;
+}
+
+.section-transaction-content .card .bank .bank-item .description .agency-bank {
+  font-size: 18px;
+  color: #041B50;
+  margin-bottom: 0px;
+}
+
+.section-transaction-content .card .bank .bank-image {
+  width: 45px;
+  height: 45px;
+  float: left;
+}
+
+.section-transaction-content .card .section-transaction-upload label.label-header {
+  font-size: 16px;
+  color: #041B50;
+  font-weight: 600;
+}
+
+.section-transaction-content .card .btn-accept {
+  background-color: #FF9E53;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.section-transaction-content .card .btn-back {
+  background-color: #FBAA6C;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .navbar-border {
   border: 1px solid #E4E6EB;
 }
