@@ -26,5 +26,22 @@
             color: #fff;
             margin-left: -11px;
         }
+
+        .notification-content {
+            .dropdown-menu {
+                width: 250px;
+                p {
+                    font-size: 14px;
+                }
+
+                .card {
+                    a {
+                        text-decoration: none;
+                    }
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
     }
 }

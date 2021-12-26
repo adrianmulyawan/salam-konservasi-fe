@@ -7,6 +7,8 @@
     <title>SALAM Konservasi</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../frontend/libraries/bootstrap/css/bootstrap.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0249022da9.js" crossorigin="anonymous"></script>
     <!-- Font Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,14 +102,35 @@
                             <!-- Profile Picture & Notif: Desktop -->
                             <ul class="navbar-nav d-none d-lg-flex ml-auto">
                                 <!-- Notif -->
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown notification-content">
                                     <a href="#" class="nav-link d-inline-block mt-2" id="notificationDropdown" role="button" data-toggle="dropdown">
                                         <img src="../frontend/images/ic_notif.png" alt="" height="24">
                                         <div class="notification">4</div>
                                     </a>
-                                    <div class="dropdown-menu text-center">
-                                        <div class="card-body">
-                                            Pengajuan Anda Telah Disetujui
+                                    <div class="dropdown-menu text-center p-2">
+                                        <div class="card p-2">
+                                            <a href="#" class="d-flex text-primary">
+                                                <i class="fas fa-check my-auto mr-2"></i>
+                                                <p class="my-auto">Pengajuan Anda Telah Disetujui</p>
+                                            </a>
+                                        </div>
+                                        <div class="card p-2">
+                                            <a href="#" class="d-flex text-primary">
+                                                <i class="fas fa-check my-auto mr-2"></i>
+                                                <p class="my-auto">Pengajuan Anda Telah Disetujui</p>
+                                            </a>
+                                        </div>
+                                        <div class="card p-2">
+                                            <a href="#" class="d-flex text-danger">
+                                                <i class="fas fa-times my-auto mr-2"></i>
+                                                <p class="my-auto">Pengajuan Anda Ditolak</p>
+                                            </a>
+                                        </div>
+                                        <div class="card p-2">
+                                            <a href="#" class="d-flex text-primary">
+                                                <i class="fas fa-check my-auto mr-2"></i>
+                                                <p class="my-auto">Surat Izin Masuk Telah Terbit</p>
+                                            </a>
                                         </div>
                                     </div>
                                 </li>
@@ -675,91 +698,12 @@
     <script src="../frontend/libraries/jquery/jquery-3.6.0.js"></script>
     <script src="../frontend/libraries/bootstrap/js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>  
     <script src="../frontend/libraries/retina/retina.min.js"></script>
     <script src="../frontend/scripts/hideSidebar.js"></script>
     <script src="../frontend/libraries/chartJS/dist/chart.min.js"></script>
-    <script>
-        AOS.init();
-
-        const ctx = document.getElementById('submissionChart').getContext('2d');
-
-
-
-        const DATA_COUNT = 7;
-        const NUMBER_CFG = {count: DATA_COUNT, min: 0, max: 100};
-
-        const labels = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December'
-];
-const borderColor = [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ]
-
-            const backgroundColor =  [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ]
-        const data = {
-        labels: labels,
-        datasets: [
-            {
-            label: 'Pariwisata',
-            data: [12, 19, 3, 5, 2, 3],
-            borderColor: borderColor,
-            backgroundColor: backgroundColor,
-            },
-            {
-            label: 'Penelitian',
-            data: [10, 19, 3, 5, 2, 3],
-            borderColor: borderColor,
-            backgroundColor: backgroundColor,
-            },
-            {
-            label: 'Pendidikan',
-            data: [8, 19, 3, 5, 2, 3],
-            borderColor:borderColor,
-            backgroundColor: backgroundColor,
-            }
-        ]
-        };
-        const config = {
-            type: 'bar',
-            data: data,
-            options: {
-                responsive: true,
-                plugins: {
-                legend: {
-                    position: 'top',
-                },
-                title: {
-                    display: true,
-                    text: 'Chart.js Bar Chart'
-                }
-                }
-            },
-        };
-
-const myChart = new Chart(ctx, config);
-    </script>  
+    <script src="../frontend/scripts/submissionChart.js"></script>
 </body>
 </html>

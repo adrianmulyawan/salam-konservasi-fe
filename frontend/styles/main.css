@@ -12526,6 +12526,23 @@ button.btn-login:hover {
   margin-left: -11px;
 }
 
+.navbar-conservation-dashboard .navbar-nav .notification-content .dropdown-menu {
+  width: 250px;
+}
+
+.navbar-conservation-dashboard .navbar-nav .notification-content .dropdown-menu p {
+  font-size: 14px;
+}
+
+.navbar-conservation-dashboard .navbar-nav .notification-content .dropdown-menu .card {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.navbar-conservation-dashboard .navbar-nav .notification-content .dropdown-menu .card a {
+  text-decoration: none;
+}
+
 header {
   padding: 186px 0 111px;
   margin-top: -77px;
